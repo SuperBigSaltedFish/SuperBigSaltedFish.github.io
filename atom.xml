@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jasonzou.me/"/>
-  <updated>2017-04-07T03:46:04.000Z</updated>
+  <updated>2017-04-18T13:51:10.000Z</updated>
   <id>http://jasonzou.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://jasonzou.me/2099/12/31/%E7%9B%AE%E6%A0%87/"/>
     <id>http://jasonzou.me/2099/12/31/目标/</id>
     <published>2099-12-31T03:53:49.000Z</published>
-    <updated>2017-04-07T03:46:04.000Z</updated>
+    <updated>2017-04-18T13:51:10.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>欲取其中，必求其上；欲取其上，必求上上。 <br> <strong>《孙子兵法》</strong> </p>
 </blockquote>
@@ -94,6 +94,7 @@
 <li>阅读《算法导论》。</li>
 </ul>
 </li>
+<li><del>下厨做饭。</del></li>
 <li>闲书<ul>
 <li><del>阅读《一个叫欧维的男人决定去死》。</del></li>
 <li><del>阅读朱光潜先生的《谈美》。</del></li>
@@ -105,9 +106,14 @@
 <li>补完昭和元禄落语心中第一季。</li>
 </ul>
 </li>
+<li>Python<ul>
+<li><del>学习Python基础语法。</del></li>
+</ul>
+</li>
 <li>blog<ul>
 <li><del>写完 <em>JavaScript如何面向对象</em>。</del></li>
-<li>写减肥论文。</li>
+<li><del>写减肥论文。</del></li>
+<li></li>
 <li>写昭和元禄落语心中观后感——口口相传。</li>
 <li>写《谈美》读后感：风行水上，自然成纹。</li>
 <li><del>转载《浅析 NodeJs 的几种文件路径》。</del></li>
@@ -123,15 +129,17 @@
 <li>打上钻石</li>
 </ul>
 </li>
+<li>给鸵鸟写生日祝福</li>
 </ul>
 <h3 id="琐事（特别有重复性的事如洗澡吃饭换衣服等仅记录第一次）"><a href="#琐事（特别有重复性的事如洗澡吃饭换衣服等仅记录第一次）" class="headerlink" title="琐事（特别有重复性的事如洗澡吃饭换衣服等仅记录第一次）"></a>琐事（特别有重复性的事如洗澡吃饭换衣服等仅记录第一次）</h3><ul>
 <li><del>打印<strong><em>跟读协议</em></strong> 。</del></li>
 <li><del>买洗发露沐浴露。</del></li>
-<li>制定5.1计划。</li>
+<li><del>制定5.1计划。</del></li>
 <li><del>写实习初期报告。</del></li>
-<li>订五一的酒店。</li>
+<li><del>订五一的酒店。</del></li>
 <li><del>提交实习初期报告。</del></li>
 <li><del>邮寄<strong><em>跟读协议</em></strong> 回学院。</del></li>
+<li>实现博客自动部署。</li>
 <li>马原<ul>
 <li>马原网课</li>
 <li>马原作业1</li>
@@ -190,13 +198,39 @@
 <li><del>翻译《How I Became a Better Programmer》<a href="http://jlongster.com/How-I-Became-Better-Programmer" target="_blank" rel="external">How I Became a Better Programmer</a>。</del><h4 id="肆（17-04-03-17-04-05）"><a href="#肆（17-04-03-17-04-05）" class="headerlink" title="肆（17.04.03-17.04.05）"></a>肆（17.04.03-17.04.05）</h4></li>
 <li>处理杂事<ul>
 <li><del>好好睡觉。</del></li>
-<li>订五一的酒店。</li>
+<li><del>订五一的酒店。</del></li>
 <li><del>提交实习初期报告。</del></li>
 </ul>
 </li>
 <li><del>阅读《乌合之众》。</del></li>
 <li><del>阅读《你不知道的JavaScript》。</del></li>
 <li>写《谈美》读后感：风行水上，自然成纹。<h4 id="伍（17-04-06-17-04-08）"><a href="#伍（17-04-06-17-04-08）" class="headerlink" title="伍（17.04.06-17.04-08）"></a>伍（17.04.06-17.04-08）</h4></li>
+<li>处理杂事<ul>
+<li><del>提醒舅舅修壁挂炉。</del></li>
+</ul>
+</li>
+<li><del>写减肥论文。</del></li>
+<li><del>lol班德尔城打上白银二。</del><h4 id="陆（17-04-09-17-04-11）"><a href="#陆（17-04-09-17-04-11）" class="headerlink" title="陆（17.04.09-17.04.11）"></a>陆（17.04.09-17.04.11）</h4></li>
+<li>处理杂事<ul>
+<li><del>制定五一计划。</del></li>
+<li><del>考虑买哪个型号的surface pro。</del></li>
+</ul>
+</li>
+<li><del>学习Python基础语法。</del></li>
+<li><del>阅读《你不知道的JavaScript》。</del></li>
+<li><del>下厨做饭。</del><h4 id="柒（17-04-12-17-04-14）"><a href="#柒（17-04-12-17-04-14）" class="headerlink" title="柒（17.04.12-17.04.14）"></a>柒（17.04.12-17.04.14）</h4><h4 id="捌（17-04-15-17-04-17）"><a href="#捌（17-04-15-17-04-17）" class="headerlink" title="捌（17.04.15-17.04.17）"></a>捌（17.04.15-17.04.17）</h4><h4 id="玖（17-04-18-17-04-20）"><a href="#玖（17-04-18-17-04-20）" class="headerlink" title="玖（17.04.18-17.04.20）"></a>玖（17.04.18-17.04.20）</h4></li>
+<li>处理杂事<ul>
+<li><del>买彩票。</del></li>
+<li><del>买菜。</del></li>
+<li>找《昭和元禄落语心中》第一季资源。</li>
+</ul>
+</li>
+<li><del>阅读《你不知道的JavaScript》。</del></li>
+<li>写《记自己第一次下厨》。</li>
+<li>补完《昭和元禄落语心中》第一季。</li>
+<li>看一章C语言。</li>
+<li>实现博客的快捷上传。</li>
+<li>看一章计网。</li>
 </ul>
 ]]></content>
     
@@ -210,6 +244,35 @@
     
       <category term="最无用的东西" scheme="http://jasonzou.me/categories/%E6%9C%80%E6%97%A0%E7%94%A8%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
     
+    
+  </entry>
+  
+  <entry>
+    <title>记我第一次下厨</title>
+    <link href="http://jasonzou.me/2017/04/18/%E8%AE%B0%E6%88%91%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%B8%8B%E5%8E%A8/"/>
+    <id>http://jasonzou.me/2017/04/18/记我第一次下厨/</id>
+    <published>2017-04-18T13:47:20.000Z</published>
+    <updated>2017-04-19T02:28:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>王者以民为天,而民以食为天。 <br> <strong>《汉书·郦食其传》</strong> </p>
+</blockquote>
+<p>　　不过是一碗面罢了。<a id="more"></a><br>　　不过是一碗面罢了，怎好意识称之为下厨呢？但这的确是我第一次在厨房中捣鼓出能入口的食物。<br>　　客观而言，我煮的面很和我的口味。它没有猪油，我的母亲和外婆的面永远是有猪油的。它很细，奶奶煮的面总是选宽面。它软又不至于腻做一团，哥哥的面总是很硬。<br>　　下班后立马就往住处赶，我怕楼下负一层的菜市等不到我平时到家的那一刻。匆匆忙忙地，匆忙得像所有匆忙回家做饭的其他人。下地铁打电话问哥哥买多少钱的小葱和小白菜合适，偏偏问了还是把1块钱的小葱买做了2块钱的。<br>　　七点过就到家了。算是很早的。洗菜切葱拍蒜，又打电话给母亲询问调料该怎么配：醋、鸡精、酱油、花椒面、藤椒油、辣椒油和再半勺辣椒油，我是一个土生土长的峨眉乐山人。水开下面，再开下菜，再开试尝。软硬合适就关火装碗。<br>　　客观而言，味道真的是不错的。<br>　　但仍然不过是一碗面罢了。<br>　　面是现成的，辣椒油是现成的，配料都是现成的。煮面时出神，竟想到：用编程做比，这就是个什么接口都准备好了的体力活。我曾浅略地思考过，学习开发网页对我有什么改变，一条一条总结的话，读上去就像十一月树上的最后一片枯叶一样干煸乏味。有幸地是，给别人讲自己下厨煮面时的胡思乱想并不那么无趣。面是怎么做的，煮多久合适，最少煮多久，最多煮多久，养胃的面是说的所有的面吗？假如是，那煮多久都养胃吗？辣椒油又是怎么做的，多少合适。别的调料加多少合适？为什么不适合加花椒，要用花椒面呢？藤椒油和花椒面都是麻的为什么值得一样加一点？加多少面汤合适，不至于让味道太淡又不让面腻成一团。面汤为什么适合用来洗碗？菜对面的帮助有哪些？怎么装碗能让面看上去好看些。<br>　　无非是一大堆成熟的封装程度很高的公共库（各种调料）和一个自造的轮子（辣椒油）在开水和面汤的环境中对面条（主要的参数）进行简单的软化加热（类似于解析或是转换格式）和调味（改变一些旧的属性赋予一些新的属性），并最终输出食物：面条吗？<br>　　为什么原料和调料众多，但是想深入研究的只有面和辣椒油呢？因为辣椒油是自造的轮子，不是现成的，是自己迟早也要造的轮子。而面条和别的调料不同，在这个处理中，面条是最重要的主要参数，值得理解它的一些深层次的属性乃至原理。<br>　　大多数人十二岁前就会煮面喂饱自己了，而我自己第一次煮面竟然是二十一岁。<br>　　十二岁的我，大概会想，煮个面而已，想这么多不会累吗？而二十一岁的我竟然已经把这种并没有什么意思的联想当成了一种娱乐。<br>　　独自生活的话免不了要自己做饭的。我离开父亲母亲，从四川一路到了北京，其实早料到了会有个这样的第一次。<br>　　北京是一个让我抑郁的地方。午间小憩，不经意间回想起自己儿时的种种。<br>　　小时候的我被管束得很严，父亲是一个小学老师，我在过去的文字里应该也提过了。总之，那时候的我向往鸟，觉得自己是笼子里的小动物。后来真的就自由了，谁也管不了我，我不信宗教，不信马克思主义，不为传统文化骄傲，更不会热爱任何的党，任何的国家。我真的很自由，不论是身，还是心。<br>　　可是，真正成了鸟，又发现自己原来更想当条狗。城里的人想长出翅膀飞出墙外，到了墙外却不知道要飞到哪里，才明白，自由竟是迷茫脆弱恐惧和孤独的代名词。此时，才想回到城里，回到笼子里。没有约束自己的那层皮，气球就不是气球，只是一团随时会消散泯灭于世间的空气。飞在天上的鸟，他想去哪里就去那里，然而不管到了哪里，都和前一处一样，四周空荡荡的，只有从东西南北吹来的风、如来掌心般的云层和东升西落的太阳。而自己曾经奋力摆脱的那片大地，隔远一看，才是多姿多彩的。城外的天，只有在城里人的眼中才是美妙的。<br>　　反而怀念起了小学的日子。
+　　</p>
+<p style="text-align: center;"><b>… End …</b></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;王者以民为天,而民以食为天。 &lt;br&gt; &lt;strong&gt;《汉书·郦食其传》&lt;/strong&gt; &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;　　不过是一碗面罢了。
+    
+    </summary>
+    
+      <category term="胡诌" scheme="http://jasonzou.me/categories/%E8%83%A1%E8%AF%8C/"/>
+    
+    
+      <category term="学做菜" scheme="http://jasonzou.me/tags/%E5%AD%A6%E5%81%9A%E8%8F%9C/"/>
     
   </entry>
   
@@ -673,9 +736,9 @@
       <category term="JavaScript知识总结" scheme="http://jasonzou.me/categories/JavaScript%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="面向对象" scheme="http://jasonzou.me/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
-    
       <category term="JavaScript" scheme="http://jasonzou.me/tags/JavaScript/"/>
+    
+      <category term="面向对象" scheme="http://jasonzou.me/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
     
   </entry>
   
