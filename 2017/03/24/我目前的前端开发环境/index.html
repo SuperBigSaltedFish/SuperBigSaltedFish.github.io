@@ -1,0 +1,818 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="webpack,babel,git,WebStorm,前端工程化," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="夹缝" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="工欲善其事，必先利其器。  《论语·卫灵公》 
+   
+　　我目前使用的前端开发工具：npm做包管理，webpack做工程化，babel用于翻译es6，IDE用webstorm，git用作版本控制。给自己的提醒：前端开发工具一定是在真正需要用到的时候才值得被学习使用，为了追求时髦而去学习使用工具是违背了工具的实用性这一特点的。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我目前的前端开发环境">
+<meta property="og:url" content="http://jasonzou.me/2017/03/24/我目前的前端开发环境/index.html">
+<meta property="og:site_name" content="夹缝">
+<meta property="og:description" content="工欲善其事，必先利其器。  《论语·卫灵公》 
+   
+　　我目前使用的前端开发工具：npm做包管理，webpack做工程化，babel用于翻译es6，IDE用webstorm，git用作版本控制。给自己的提醒：前端开发工具一定是在真正需要用到的时候才值得被学习使用，为了追求时髦而去学习使用工具是违背了工具的实用性这一特点的。">
+<meta property="og:updated_time" content="2017-03-25T03:52:42.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="我目前的前端开发环境">
+<meta name="twitter:description" content="工欲善其事，必先利其器。  《论语·卫灵公》 
+   
+　　我目前使用的前端开发工具：npm做包管理，webpack做工程化，babel用于翻译es6，IDE用webstorm，git用作版本控制。给自己的提醒：前端开发工具一定是在真正需要用到的时候才值得被学习使用，为了追求时髦而去学习使用工具是违背了工具的实用性这一特点的。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://jasonzou.me/2017/03/24/我目前的前端开发环境/"/>
+
+
+
+
+
+  <title> 我目前的前端开发环境 | 夹缝 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">夹缝</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://jasonzou.me/2017/03/24/我目前的前端开发环境/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jason Zou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/timg.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夹缝">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                我目前的前端开发环境
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-24T23:55:03+08:00">
+                2017-03-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/工具使用技巧/" itemprop="url" rel="index">
+                    <span itemprop="name">工具使用技巧</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote class="blockquote-center"><p>工欲善其事，必先利其器。 <br> <strong>《论语·卫灵公》</strong> </p>
+</blockquote>   
+<p>　　我目前使用的前端开发工具：npm做包管理，webpack做工程化，babel用于翻译es6，IDE用webstorm，git用作版本控制。给自己的提醒：前端开发工具一定是在真正需要用到的时候才值得被学习使用，为了追求时髦而去学习使用工具是违背了工具的实用性这一特点的。<br><a id="more"></a></p>
+<h2 id="NPM"><a href="#NPM" class="headerlink" title="NPM"></a>NPM</h2><p>NPM（<a href="https://www.npmjs.com/" target="_blank" rel="external">官网</a>）是随同nodeJS一同安装的包管理工具，能解决NodeJS代码部署上的很多问题。常见的使用场景有以下几种：</p>
+<ul>
+<li>允许用户从NPM服务器下载别人编写的第三方包到本地使用，前端开发中，也会常常使用别人开发的JS库。</li>
+<li>允许用户从NPM服务器下载并安装别人编写的命令行程序到本地使用。</li>
+<li>允许用户将自己编写的包或命令行程序上传到NPM服务器供别人使用。</li>
+</ul>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>安装nodeJS后就可以使用npm进行包管理了，直接去<a href="https://nodejs.org/en/" target="_blank" rel="external">nodeJS官网</a>下载安装吧。</p>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>npm的使用是很简单的，这里给出一个现成的<a href="http://www.runoob.com/nodejs/nodejs-npm.html" target="_blank" rel="external">详细教程</a>。</p>
+<h2 id="Webpack"><a href="#Webpack" class="headerlink" title="Webpack"></a>Webpack</h2><p>Webpack是当下最热门的前端资源模块化管理和打包工具。</p>
+<h3 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h3><p>首先要安装 Node.js，Node.js 自带了软件包管理器 npm，Webpack 需要 Node.js v0.6 以上支持，建议使用最新版 Node.js。<br>用 npm 全局安装Webpack： </p>
+<pre><code># 其实不推荐全局安装，最好使用项目本地的webpack
+$ npm install webpack -g
+</code></pre><p>通常还需要将webpack安装进项目的依赖中，理论上每个项目都需要一个本地的webpack，这样避免了可能出现的版本冲突：</p>
+<pre><code># 在项目所在的目录下
+# 检查是否有package.json 没有就运行  $ npm init 
+$ npm install webpack --save-dev
+</code></pre><p>安装Webpack开发工具也是有意义的，Webpack Server会提供一个热更新的node后台，在实际开发时比较有用：</p>
+<pre><code>#安装开发工具
+$ npm install webpack-dev-server --save-dev
+</code></pre><h3 id="使用-1"><a href="#使用-1" class="headerlink" title="使用"></a>使用</h3><p>Webpack的使用方法很简单，只用写好它的配置文件即可，另外要注意，Loader是需要单独下载的。下面给出两篇比较详细的webpack使用教程：</p>
+<ul>
+<li><a href="http://www.jianshu.com/p/42e11515c10f" target="_blank" rel="external">入门Webpack，看这篇就足够了</a></li>
+<li><a href="http://www.w2bc.com/Article/50764" target="_blank" rel="external">一小时包会——webpack入门指南</a></li>
+</ul>
+<h2 id="babel"><a href="#babel" class="headerlink" title="babel"></a>babel</h2><p>Babel is a JavaScript compiler. 这是babel给自己的介绍。通常，我是配合Webpack使用babel的，主要是用babel翻译es6，别的功能用的很少。</p>
+<h3 id="安装-2"><a href="#安装-2" class="headerlink" title="安装"></a>安装</h3><p>babel的安装很简单，还是直接用npm：</p>
+<pre><code># 安装babel 作为webpack的一个loader
+$ npm install --save-dev babel-loader
+</code></pre><h3 id="使用-2"><a href="#使用-2" class="headerlink" title="使用"></a>使用</h3><p>使用babel的第一步是配置Webpack的config文件：</p>
+<pre><code># 找到config文件中的module，添加babel-loader
+    module: {
+      loaders: [
+        { test: /\.js$/, exclude: /node_modules/, loader: &quot;babel-loader&quot;}
+      ]
+    }
+</code></pre><p>第二步是配置.babelrc文件，这一步是关键，请参照阮一峰老师的<a href="http://www.ruanyifeng.com/blog/2016/01/babel.html" target="_blank" rel="external">Babel 入门教程</a>。请记住：babel的转码规则是需要单独用npm安装的，所以配置完.babelrc文件后，还应该用npm安装对应的转码规则。</p>
+<h2 id="WebStorm"><a href="#WebStorm" class="headerlink" title="WebStorm"></a>WebStorm</h2><p>WebStorm自称是最好的JavaScript IDE，简单说书我对WebStorm的看法。作为一款IDE，WebStorm吃的内存不算多，自动跳转，语法检查，自动补全这些是比较方便的，虽然sublime（当然也包括vim）配合插件也可以达成这些效果，但既然电脑能无压力的跑IDE为啥还要去用sublime呢。此外，sublime集成了版本控制插件，这点在实际开发中也是很方便的。</p>
+<ul>
+<li><a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="external">WebStorm官网</a></li>
+<li><a href="http://www.cnblogs.com/gavin007/p/6379384.html" target="_blank" rel="external">破解WebStorm（如果经济上不是特别困难，请支持正版）</a></li>
+</ul>
+<h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><p>git就不必多说了，每个程序员都应该都会使用，哪怕确实不喜欢git，也很少有不会用git的程序员。如果是刚刚接触编程的同学可以参考<a href="http://git.oschina.net/progit/" target="_blank" rel="external">Pro Git</a>进行学习。</p>
+<p>　　还有待填补的空缺：Karma之类的自动化测试工具，esLint之类的语法差错工具，CSS的预编译工具，HTML压缩工具和我不知道前端工具等等。等到有需求要用到这些新工具的时候我会学习之后再做一次总结的。</p>
+<p style="text-align: center;"><b>… End …</b></p>
+
+
+
+
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/webpack/" rel="tag"># webpack</a>
+          
+            <a href="/tags/babel/" rel="tag"># babel</a>
+          
+            <a href="/tags/git/" rel="tag"># git</a>
+          
+            <a href="/tags/WebStorm/" rel="tag"># WebStorm</a>
+          
+            <a href="/tags/前端工程化/" rel="tag"># 前端工程化</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/23/md文档编辑方法小结/" rel="next" title="md文档编辑方法小结">
+                <i class="fa fa-chevron-left"></i> md文档编辑方法小结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/25/JavaScript如何面向对象/" rel="prev" title="JavaScript如何“面向对象”">
+                JavaScript如何“面向对象” <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/timg.jpg"
+               alt="Jason Zou" />
+          <p class="site-author-name" itemprop="name">Jason Zou</p>
+           
+              <p class="site-description motion-element" itemprop="description">一生中净是耻辱</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/SuperBigSaltedFish" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://zerosrat.com/" title="Zero Yu 的博客" target="_blank">Zero Yu 的博客</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#NPM"><span class="nav-number">1.</span> <span class="nav-text">NPM</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">1.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用"><span class="nav-number">1.2.</span> <span class="nav-text">使用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Webpack"><span class="nav-number">2.</span> <span class="nav-text">Webpack</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-1"><span class="nav-number">2.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用-1"><span class="nav-number">2.2.</span> <span class="nav-text">使用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#babel"><span class="nav-number">3.</span> <span class="nav-text">babel</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装-2"><span class="nav-number">3.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用-2"><span class="nav-number">3.2.</span> <span class="nav-text">使用</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#WebStorm"><span class="nav-number">4.</span> <span class="nav-text">WebStorm</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git"><span class="nav-number">5.</span> <span class="nav-text">git</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jason Zou</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

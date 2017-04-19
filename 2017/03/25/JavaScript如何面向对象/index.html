@@ -1,0 +1,892 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="面向对象,JavaScript," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="夹缝" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="不同的矛盾，只有用不同的方法才能解决。  毛泽东 
+
+　　JavaScript并不是一门严格的面向对象语言，因为JavaScript没有类。ES6给习惯了使用类的程序员们一个类的语法糖，但相较于别的面向对象语言，ES6的这个类也是很不成熟的类（将在本文后续讲详细说明）。虽然没有一个严格定义的类，但这并不影响面向对象的设计思想在JavaScript编程中发光发热。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript如何“面向对象”">
+<meta property="og:url" content="http://jasonzou.me/2017/03/25/JavaScript如何面向对象/index.html">
+<meta property="og:site_name" content="夹缝">
+<meta property="og:description" content="不同的矛盾，只有用不同的方法才能解决。  毛泽东 
+
+　　JavaScript并不是一门严格的面向对象语言，因为JavaScript没有类。ES6给习惯了使用类的程序员们一个类的语法糖，但相较于别的面向对象语言，ES6的这个类也是很不成熟的类（将在本文后续讲详细说明）。虽然没有一个严格定义的类，但这并不影响面向对象的设计思想在JavaScript编程中发光发热。">
+<meta property="og:updated_time" content="2017-03-26T14:09:21.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JavaScript如何“面向对象”">
+<meta name="twitter:description" content="不同的矛盾，只有用不同的方法才能解决。  毛泽东 
+
+　　JavaScript并不是一门严格的面向对象语言，因为JavaScript没有类。ES6给习惯了使用类的程序员们一个类的语法糖，但相较于别的面向对象语言，ES6的这个类也是很不成熟的类（将在本文后续讲详细说明）。虽然没有一个严格定义的类，但这并不影响面向对象的设计思想在JavaScript编程中发光发热。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://jasonzou.me/2017/03/25/JavaScript如何面向对象/"/>
+
+
+
+
+
+  <title> JavaScript如何“面向对象” | 夹缝 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">夹缝</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://jasonzou.me/2017/03/25/JavaScript如何面向对象/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jason Zou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/timg.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夹缝">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                JavaScript如何“面向对象”
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-25T12:19:36+08:00">
+                2017-03-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript知识总结/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript知识总结</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote class="blockquote-center"><p>不同的矛盾，只有用不同的方法才能解决。 <br> <strong>毛泽东</strong> </p>
+</blockquote>
+<p>　　JavaScript并不是一门严格的面向对象语言，因为JavaScript没有类。ES6给习惯了使用类的程序员们一个类的语法糖，但相较于别的面向对象语言，ES6的这个类也是很不成熟的类（将在本文后续讲详细说明）。虽然没有一个严格定义的类，但这并不影响面向对象的设计思想在JavaScript编程中发光发热。<br><a id="more"></a></p>
+<h3 id="什么是面向对象"><a href="#什么是面向对象" class="headerlink" title="什么是面向对象"></a>什么是面向对象</h3><blockquote>
+<p>百度百科：<br>　　面向对象是指一种程序设计范型，同时也是一种程序开发的方法。对象指的是类的集合。它将对象作为程序的基本单元，将程序和数据封装其中，以提高软件的重用性、灵活性和扩展性。狭义的“面向对象”是指在程序设计中采用封装、继承、多态等设计方法。</p>
+</blockquote>
+<p>　　面向对象的编程方法具有四个基本特性：</p>
+<ul>
+<li><p>抽象<br>我是一个前端，从日常实战中的角度出发，我认为“抽象”主要是针对两方面： </p>
+<ul>
+<li><p>抽象数据模型<br>如这篇博客，我要从数据层面去抽象出它的模型。得出的结果应该是类似于：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="attr">title</span>: <span class="string">'JavaScript和面向对象'</span>,</div><div class="line">	<span class="attr">date</span>: <span class="string">'2017-03-25 12:19:36'</span>,</div><div class="line">	<span class="attr">categories</span>: <span class="string">'JavaScript知识总结'</span>,</div><div class="line">	<span class="attr">tags</span>: &#123;</div><div class="line">		<span class="attr">tag1</span>: <span class="string">'JavaScript'</span>,</div><div class="line">		<span class="attr">tag2</span>: <span class="string">'面向对象'</span></div><div class="line">	&#125;，</div><div class="line">	<span class="comment">//... 等等</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>抽象具体操作<br>如果将这篇博客抽象为一个对象，那么它对外并没有太多接口，只有一个提供给UI层的“读”接口。那么，“读”这个操作，就可以作为博客对象的方法被抽象出来。形如：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">blog</span> </span>&#123;</div><div class="line">	<span class="comment">//提示：以下代码需经babel翻译后才能在常规生产环境中运行。</span></div><div class="line">	_data;</div><div class="line">	readData() &#123;</div><div class="line">		<span class="keyword">return</span> <span class="keyword">this</span>._data;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>继承<br>“继承”思想是面向对象编程的重要一环，前端开发中并不缺少能用到继承的场景，如页面中常出现的列表对象：</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">类</th>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">特征</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">父类</td>
+<td style="text-align:left">普通列表</td>
+<td style="text-align:left">列表</td>
+</tr>
+<tr>
+<td style="text-align:left">子类</td>
+<td style="text-align:left">可增删列表</td>
+<td style="text-align:left">列表 + “增”、“删”方法</td>
+</tr>
+<tr>
+<td style="text-align:left">“孙”类</td>
+<td style="text-align:left">可增删重排序列表</td>
+<td style="text-align:left">列表 + “增”、“删”方法 + 重排序方法</td>
+</tr>
+</tbody>
+</table>
+<p>　　如是就是前端开发中一个很普通的继承运用了。JavaScript没有严格定义的类，<br>　　因此JavaScript的继承相较于别的语言稍显特殊。详情将在本文后续介绍。</p>
+<ul>
+<li><p>封装<br>封装是把过程和数据包围起来，对数据的访问只能通过已定义的界面。面向对象计算始于这个基本概念，即现实世界可以被描绘成一系列完全自治、封装的对象，这些对象通过一个受保护的接口访问其他对象。一旦定义了一个对象的特性，则有必要决定这些特性的可见性，即哪些特性对外部世界是可见的，哪些特性用于表示内部状态。封装这一行为是面向对象编程的安全性保障。值得一提的是：JavaScript并没有私有变量。在ES6编程中通常约定：以下划线开头的变量（如 _data ）为私有变量。本文对封装不做详细介绍说明。</p>
+</li>
+<li><p>多态</p>
+<blockquote>
+<p>多态：同一操作作用于不同的对象，可以有不同的解释，产生不同的执行结果。  </p>
+</blockquote>
+<p>实现多态，常见的方式无非是覆盖或重载。<br>JavaScript中，后创建的同名函数会覆盖先创建的同名函数。因此，直接在子类中重写需要实现多态的方法，覆盖从父类继承来的方法即可实现多态。<br>JavaScript的重载是颇为有趣的。JavaScript并不是理想的用于重载的语言，因为JavaScript函数对参数长度是没有限制的，因此，常规语言的重载思路并不对JavaScript适用。但，我们可以通过在函数内部判断参数类型和参数length来模拟重载。我认为，这样的灵活性是JavaScript这门语言的魅力所在。</p>
+</li>
+</ul>
+<h3 id="为什么要面向对象"><a href="#为什么要面向对象" class="headerlink" title="为什么要面向对象"></a>为什么要面向对象</h3><p>为什么要面向对象？这是一个值得每一个前端工程师考虑的问题。JavaScript这门语言（尤其是ES6之后）也是适合使用函数式编程的。在此给出一些链接供读者参考：</p>
+<ul>
+<li><a href="http://taobaofed.org/blog/2017/03/16/javascript-functional-programing/" target="_blank" rel="external">我眼中的 JavaScript 函数式编程</a></li>
+<li><a href="https://www.zhihu.com/question/20275578" target="_blank" rel="external">面向对象编程的弊端是什么？</a></li>
+<li><a href="http://www.vaikan.com/whats-wrong-with-oop-and-fp/" target="_blank" rel="external">为什么说面向对象编程和函数式编程都有问题</a></li>
+</ul>
+<h3 id="ES5中的面向对象"><a href="#ES5中的面向对象" class="headerlink" title="ES5中的面向对象"></a>ES5中的面向对象</h3><p>JavaScript如何“面向对象”？这是一个非常基础的问题，我认为这是每一个前端工程师都应该花心思花时间去掌握的东西。</p>
+<ul>
+<li><p>首先，你要有个对象（创建对象的几种常用方法）： </p>
+<ul>
+<li><p>原始模式： </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> Person = &#123;</div><div class="line">	<span class="attr">name</span>: <span class="string">'Jason'</span>,</div><div class="line">	<span class="attr">age</span>: <span class="number">21</span></div><div class="line">&#125;</div><div class="line"><span class="comment">// 等同于</span></div><div class="line"><span class="keyword">var</span> Person = &#123;&#125;;</div><div class="line">Person.name = <span class="string">'Jason'</span>；</div><div class="line">Person.age = <span class="number">21</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>原始模式的改进： </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 用一个函数来构造对象，解决代码重复的问题</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age</span>) </span>&#123;</div><div class="line">	<span class="keyword">return</span> &#123;</div><div class="line">		<span class="attr">name</span>: name,</div><div class="line">		<span class="attr">age</span>: age</div><div class="line">	&#125;	</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> personJ = Person(<span class="string">'Jason'</span>, <span class="number">21</span>);</div><div class="line"><span class="keyword">var</span> personX = Person(<span class="string">'Xku'</span>, <span class="number">18</span>);</div><div class="line"><span class="comment">// 这个模式存在的问题是，personJ和personX两个实例没有内在的联系，并不能看出他们是出于同一个原型的</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>构造函数模式： </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 在函数内部使用this是构造函数的关键</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age</span>) </span>&#123;</div><div class="line">    <span class="keyword">this</span>.name = name;</div><div class="line">    <span class="keyword">this</span>.age = age;</div><div class="line">&#125;</div><div class="line"><span class="comment">// 使用new实例化对象</span></div><div class="line"><span class="keyword">var</span> personJ = <span class="keyword">new</span> Person(<span class="string">'Jason'</span>, <span class="number">21</span>);</div><div class="line"><span class="keyword">var</span> personX = <span class="keyword">new</span> Perspm(<span class="string">'Xku'</span>, <span class="number">18</span>);</div><div class="line"><span class="comment">// 此时personJ和personX会自动生成一个constructor属性，指向他们的构造函数</span></div><div class="line">personJ.constructor == Person <span class="comment">// true</span></div><div class="line">personX <span class="keyword">instanceof</span> Person <span class="comment">// true</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>Prototype模式： </p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 构造函数中可能会存在一些不变的属性</span></div><div class="line"><span class="comment">// 没有必要在每一次实例化对象的时候都将其加入新建对象之中</span></div><div class="line"><span class="comment">// 此时，我们可以采用Prototype + 构造函数模式</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age</span>) </span>&#123;</div><div class="line">    <span class="keyword">this</span>.name = name;</div><div class="line">    <span class="keyword">this</span>.age = age;</div><div class="line">&#125;</div><div class="line">Person.prototype.type = <span class="string">"哺乳动物"</span>；</div><div class="line">Person.prototype.sayHello = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'Hello!'</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>构造函数的继承：<br>前文中已经讲到过了，JavaScript中，面向对象主要体现在对对象的封装和继承上，JavaScript常规上讲没有重载，多态的实现主要依赖覆盖，我学艺不精，在这方面暂时没有找到什么好讲的。因此，本文将重点介绍如何在使用JavaScript语言进行编程时实现封装和继承。前面已经介绍了封装。现在开始介绍继承：<br>场景：这里有个Animal类</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Animal</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">this</span>.species = <span class="string">"动物"</span>；</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>和一个Person类</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age</span>) </span>&#123;</div><div class="line">    <span class="keyword">this</span>.name = name;</div><div class="line">    <span class="keyword">this</span>.age = age;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>现在要使Person类继承Animal类</p>
+<ul>
+<li><p>构造函数绑定</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//  使用call或apply方法，将父对象的构造函数绑定在子函数上</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age</span>) </span>&#123;</div><div class="line">    Animal.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>);</div><div class="line">    <span class="keyword">this</span>.name = name;</div><div class="line">    <span class="keyword">this</span>.age = age;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> personJ = <span class="keyword">new</span> Person(<span class="string">'Jason'</span>, <span class="number">21</span>);</div><div class="line">conslo.log(personJ.species); <span class="comment">// 动物</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>prototype模式</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 将Person的prototype替换为Animal的prototype，</span></div><div class="line">Person.prototype = <span class="keyword">new</span> Animal();</div><div class="line"><span class="comment">// 注意：Person的prototype被替换后，他的constructor也被替换成Animal的了，因此注意立刻对此做出修改</span></div><div class="line">Person.prototype.constructor = Person;</div></pre></td></tr></table></figure>
+</li>
+<li><p>直接继承prototype</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 我们可以把Animal类用prototype模式写，如是就不需要new Animal()了</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Animal</span>(<span class="params"></span>) </span>&#123;&#125;</div><div class="line">Animal.prototype.species = <span class="string">'动物'</span>；</div><div class="line">Person.prototype = Animal.prototype;</div><div class="line">Person.prototype.constructor = Person;</div><div class="line"><span class="comment">// 此方法的缺点是，任何针对Person的prototype修改，都将影响到Animal的prototype，因为二者现在属于同一内存的不同引用</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>利用空对象作为中介</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 这样，修改就不会互相影响了</span></div><div class="line"><span class="keyword">var</span> F = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</div><div class="line">F.prototype = Animal.prototype;</div><div class="line">Person.prototype = <span class="keyword">new</span> F();</div><div class="line">Person.prototype.constructor = Person;</div><div class="line"><span class="comment">// 利用这个原理，我们可以封装出一个继承方法：</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">extend</span>(<span class="params">Child, Parent</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> F = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;&#125;;</div><div class="line">    F.prototype = Parent.prototype;</div><div class="line">    Child.prototype = <span class="keyword">new</span> F();</div><div class="line">    Child.prototype.constructor = Child;</div><div class="line">    <span class="comment">// 留下通往父函数的通道</span></div><div class="line">    Child.uber = Parent.prototype;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>拷贝继承</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 拷贝继承原理类似于上一种继承方式</span></div><div class="line"><span class="comment">// 首先依然把不变属性都绑定在prototype上</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">Animal</span>(<span class="params"></span>) </span>&#123;&#125;;</div><div class="line">Animal.prototype.species = <span class="string">'动物'</span>；</div><div class="line"><span class="comment">// 拷贝函数</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">extend2</span>(<span class="params">Child, Parent</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> p = Parent.prototype;</div><div class="line">    <span class="keyword">var</span> c = Child.prototype;</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> p) &#123;</div><div class="line">        c[i] = p[i];</div><div class="line">    &#125;</div><div class="line">    c.uber = p;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>非构造函数的继承：</p>
+<ul>
+<li><p>object() 方法<br>先来看Douglas Crockford ( json 的发明人 ) 如何实现：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 道格拉斯提出了一个object函数来完成非构造函数的继承</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">object</span>(<span class="params">o</span>) </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">F</span>(<span class="params"></span>) </span>&#123;&#125;</div><div class="line">    F.prototype = o;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">new</span> F();</div><div class="line">&#125;</div><div class="line"><span class="comment">// 上面将子对象的的prototype指向父对象了，之后还需要将子对象本身的属性加上</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>浅拷贝</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 顾名思义，将父对象的属性拷贝给子对象：</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">extendCopy</span>(<span class="params">p</span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> c = &#123;&#125;;</div><div class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> p) &#123;</div><div class="line">    c[i] = p[i];</div><div class="line">  &#125;</div><div class="line">  c.uber = p;</div><div class="line">  retrun c;</div><div class="line">&#125;</div><div class="line"><span class="comment">// 浅拷贝的问题很明显，子类和父类的属性只是同一个内存的不同引用，因此子类修改属性，父类也会被影响</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>深拷贝</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 递归调用浅拷贝，实现深拷贝，实现真正的拷贝既可避免浅拷贝中出现的问题</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">deepCopy</span>(<span class="params">p, c</span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> c = c || &#123;&#125;;</div><div class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> p) &#123;</div><div class="line">    <span class="keyword">if</span>(<span class="keyword">typeof</span> p[i] === <span class="string">'object'</span>) &#123;</div><div class="line">      c[i] = (p[i].constructor === <span class="built_in">Array</span>) ? [] : &#123;&#125;;</div><div class="line">      deepCopy(p[i], c[i]);</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">      c[i] = p[i];</div><div class="line">    &#125; </div><div class="line">  &#125;</div><div class="line">  <span class="keyword">return</span> c;</div><div class="line">&#125;</div><div class="line"><span class="comment">// PS jQuery库正是用的这种方式实现的继承</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="ES6中的面向对象"><a href="#ES6中的面向对象" class="headerlink" title="ES6中的面向对象"></a>ES6中的面向对象</h3><p>ES6给了习惯使用类的程序员们一个class语法糖，先给出<a href="http://babeljs.io/repl/" target="_blank" rel="external">babel</a>对class的翻译：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 这是ES6代码</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</div><div class="line">  <span class="keyword">constructor</span>(name, age) &#123;</div><div class="line">    <span class="keyword">this</span>.name = name;</div><div class="line">    <span class="keyword">this</span>.age = age;</div><div class="line">  &#125;</div><div class="line">  sayName() &#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.name;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">// babel翻译后的代码</span></div><div class="line"><span class="meta">"use strict"</span>;</div><div class="line"></div><div class="line"><span class="keyword">var</span> _createClass = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">		<span class="function"><span class="keyword">function</span> <span class="title">defineProperties</span>(<span class="params">target, props</span>) </span>&#123;</div><div class="line">			<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; props.length; i++) &#123;</div><div class="line">				<span class="keyword">var</span> descriptor = props[i];</div><div class="line">				descriptor.enumerable = descriptor.enumerable || <span class="literal">false</span>;</div><div class="line">				descriptor.configurable = <span class="literal">true</span>;</div><div class="line">				<span class="keyword">if</span> (<span class="string">"value"</span> <span class="keyword">in</span> descriptor) descriptor.writable = <span class="literal">true</span>;</div><div class="line">				<span class="built_in">Object</span>.defineProperty(target, descriptor.key, descriptor)</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">Constructor, protoProps, staticProps</span>) </span>&#123;</div><div class="line">			<span class="keyword">if</span> (protoProps) defineProperties(Constructor.prototype, protoProps);</div><div class="line">			<span class="keyword">if</span> (staticProps) defineProperties(Constructor, staticProps);</div><div class="line">			<span class="keyword">return</span> Constructor</div><div class="line">		&#125;</div><div class="line">	&#125;();</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">_classCallCheck</span>(<span class="params">instance, Constructor</span>) </span>&#123;</div><div class="line">	<span class="keyword">if</span> (!(instance <span class="keyword">instanceof</span> Constructor)) &#123;</div><div class="line">		<span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">TypeError</span>(<span class="string">"Cannot call a class as a function"</span>);</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> Person = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name, age</span>) </span>&#123;</div><div class="line">    _classCallCheck(<span class="keyword">this</span>, Person);</div><div class="line"></div><div class="line">    <span class="keyword">this</span>.name = name;</div><div class="line">    <span class="keyword">this</span>.age = age;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  _createClass(Person, [&#123;</div><div class="line">    <span class="attr">key</span>: <span class="string">"sayName"</span>,</div><div class="line">    <span class="attr">value</span>: <span class="function"><span class="keyword">function</span> <span class="title">sayName</span>(<span class="params"></span>) </span>&#123;</div><div class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.name;</div><div class="line">    &#125;</div><div class="line">  &#125;]);</div><div class="line"></div><div class="line">  <span class="keyword">return</span> Person;</div><div class="line">&#125;();</div></pre></td></tr></table></figure></p>
+<p>参考代码后，发现，ES6中的类是构造函数+继承方法的一个语法糖，这里不做详细解析。考虑到原理上并无差异，这里只给出ES6 class中继承的语法供读者参考：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Polygon</span> </span>&#123;</div><div class="line">  <span class="keyword">constructor</span>(height, width) &#123;</div><div class="line">    <span class="keyword">this</span>.name = <span class="string">'Polygon'</span>;</div><div class="line">    <span class="keyword">this</span>.height = height;</div><div class="line">    <span class="keyword">this</span>.width = width;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Square</span> <span class="keyword">extends</span> <span class="title">Polygon</span> </span>&#123;</div><div class="line">  <span class="keyword">constructor</span>(length) &#123;</div><div class="line">    <span class="keyword">super</span>(length, length);</div><div class="line">    <span class="keyword">this</span>.name = <span class="string">'Square'</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">// 请不要忘记 super() 倘若不调用 super() 方法，是不能调用父类方法的，子类的构造函数也无法完成。</span></div></pre></td></tr></table></figure></p>
+<p>关于super()用法请参考： <a href="https://www.zhihu.com/question/38292361?sort=created" target="_blank" rel="external">ES6中的关键字super该如何理解？</a></p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ul>
+<li><a href="http://www.ruanyifeng.com/blog/" target="_blank" rel="external">阮一峰的博客</a></li>
+<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript" target="_blank" rel="external">JavaScript面向对象简介</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/class" target="_blank" rel="external">MDN-JavaScript-class</a></li>
+<li>百度百科</li>
+<li>知乎</li>
+</ul>
+<p style="text-align: center;"><b>… End …</b></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/面向对象/" rel="tag"># 面向对象</a>
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/24/我目前的前端开发环境/" rel="next" title="我目前的前端开发环境">
+                <i class="fa fa-chevron-left"></i> 我目前的前端开发环境
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/27/的几种文件路径》/" rel="prev" title="【转载】《浅析nodeJS的几种文件路径》">
+                【转载】《浅析nodeJS的几种文件路径》 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/timg.jpg"
+               alt="Jason Zou" />
+          <p class="site-author-name" itemprop="name">Jason Zou</p>
+           
+              <p class="site-description motion-element" itemprop="description">一生中净是耻辱</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/SuperBigSaltedFish" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://zerosrat.com/" title="Zero Yu 的博客" target="_blank">Zero Yu 的博客</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是面向对象"><span class="nav-number">1.</span> <span class="nav-text">什么是面向对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么要面向对象"><span class="nav-number">2.</span> <span class="nav-text">为什么要面向对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ES5中的面向对象"><span class="nav-number">3.</span> <span class="nav-text">ES5中的面向对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ES6中的面向对象"><span class="nav-number">4.</span> <span class="nav-text">ES6中的面向对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">5.</span> <span class="nav-text">参考</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jason Zou</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

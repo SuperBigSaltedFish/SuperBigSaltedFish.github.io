@@ -1,0 +1,784 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="夹缝" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="原文出处：http://jlongster.com/How-I-Became-Better-Programmer.
+译者的话　　我一直认为：“知道”和“懂得”之间是存在着巨大的差距的。从别人那里得到的指导和教训，永远和别人真正想教授的东西往往相差不少。广义上举例讲，作者的原话和我的翻译之间也会存在差异（这是当然也和本人的水平实在有限有关，毕竟，这篇翻译也只是自行记录为主，传播分享为辅）。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【翻译】我是怎么变牛逼的">
+<meta property="og:url" content="http://jasonzou.me/2017/04/01/How-I-Became-a-Better-Programmer/index.html">
+<meta property="og:site_name" content="夹缝">
+<meta property="og:description" content="原文出处：http://jlongster.com/How-I-Became-Better-Programmer.
+译者的话　　我一直认为：“知道”和“懂得”之间是存在着巨大的差距的。从别人那里得到的指导和教训，永远和别人真正想教授的东西往往相差不少。广义上举例讲，作者的原话和我的翻译之间也会存在差异（这是当然也和本人的水平实在有限有关，毕竟，这篇翻译也只是自行记录为主，传播分享为辅）。">
+<meta property="og:updated_time" content="2017-04-04T08:45:30.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="【翻译】我是怎么变牛逼的">
+<meta name="twitter:description" content="原文出处：http://jlongster.com/How-I-Became-Better-Programmer.
+译者的话　　我一直认为：“知道”和“懂得”之间是存在着巨大的差距的。从别人那里得到的指导和教训，永远和别人真正想教授的东西往往相差不少。广义上举例讲，作者的原话和我的翻译之间也会存在差异（这是当然也和本人的水平实在有限有关，毕竟，这篇翻译也只是自行记录为主，传播分享为辅）。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://jasonzou.me/2017/04/01/How-I-Became-a-Better-Programmer/"/>
+
+
+
+
+
+  <title> 【翻译】我是怎么变牛逼的 | 夹缝 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">夹缝</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://jasonzou.me/2017/04/01/How-I-Became-a-Better-Programmer/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jason Zou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/timg.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夹缝">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                【翻译】我是怎么变牛逼的
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-01T15:07:15+08:00">
+                2017-04-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/最无用的东西/" itemprop="url" rel="index">
+                    <span itemprop="name">最无用的东西</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="原文出处："><a href="#原文出处：" class="headerlink" title="原文出处："></a>原文出处：</h3><p><a href="http://jlongster.com/How-I-Became-Better-Programmer" target="_blank" rel="external">http://jlongster.com/How-I-Became-Better-Programmer</a>.</p>
+<h3 id="译者的话"><a href="#译者的话" class="headerlink" title="译者的话"></a>译者的话</h3><p>　　我一直认为：“知道”和“懂得”之间是存在着巨大的差距的。从别人那里得到的指导和教训，永远和别人真正想教授的东西往往相差不少。广义上举例讲，作者的原话和我的翻译之间也会存在差异（这是当然也和本人的水平实在有限有关，毕竟，这篇翻译也只是自行记录为主，传播分享为辅）。<br><a id="more"></a></p>
+<h3 id="如何成为更好的程序员"><a href="#如何成为更好的程序员" class="headerlink" title="如何成为更好的程序员"></a>如何成为更好的程序员</h3><p>有人在 React Conf 上向问我如何成为更好的程序员。由于某些原因，人们觉得我是个值得向其求取意见的牛逼程序员。（既然听众们诚心诚意的发问了）我觉得，写下我这些年来编程成长之路的技巧法门是有意义的。</p>
+<p>关于我的一些小故事：<br>我32岁，之前有过超过十年的硬编经验。长久以来，我对自己所做的事并不那么自信。甚至直到今天，我也是在怀疑自己的。重要的事，既然（客观上）这种感觉挥之不去，那不如（在主观上去）忽略它，只管继续完善自己，不断积累经验。</p>
+<p>且让我声明一下：这些只是提升你编程技能的一些小提示。最后你得亲自弄明白，哪些是对你最有益的。这些只是我认为有用的东西。</p>
+<h4 id="寻找给你灵感的人，但不要盲目崇拜他们"><a href="#寻找给你灵感的人，但不要盲目崇拜他们" class="headerlink" title="寻找给你灵感的人，但不要盲目崇拜他们"></a>寻找给你灵感的人，但不要盲目崇拜他们</h4><p>这些年里，我关注了很多我尊敬的人，从他们那里学习新技术。我只是相信他们的方向是对的，并探索他们的正在研究的领域，并从中学到了很多。这些人往往才智过人，充满灵性并且成果颇多。找到这些人，让人他们启发你，指导你。</p>
+<p>但是，一定不要过分崇拜他们。Twitter上的信息让他们看上去牛逼的可怕，不过，如果你看看他们在平日里是怎么工作的，你会发现他们并不是那么与众不同。同样是修补的各种错误之类的。我们都是在实验中摸索向前的。最后，不要盲目相信他们；如果你不赞同某些东西，就怼他们，然后从质疑中学习。我的一些成果就是在这样的交流中产生的。</p>
+<p>我的 EMACS 设置一团糟。我不知道为啥我的 OCaml 自动补出问题了（它坏了一个多月了）。我没有做任务自动化，因此，有时候得在我的shell输入历史里慢慢找某些我需要用到的命令。我一开始的时候写的代码其丑无比。我把很多东西绑定在全局对象中，直到有一天我意识到我都干了些什么。最牛逼的程序员会使用各种技巧。但最重要的（不是这些牛逼的技巧，而是）你能把问题给解决了。</p>
+<h4 id="切莫妄之菲薄"><a href="#切莫妄之菲薄" class="headerlink" title="切莫妄之菲薄"></a>切莫妄之菲薄</h4><p>新人程序员总倾向于认为他们干的事意义不大，因为它们不成熟。或者，你是个老司机，但是刚刚涉及一个让你不舒服的新领域。我认为，一些最棒的点子来自于那些观点尚未成型的新人程序员，因为他们能看到思维模式成型的老鸟们看不到的，某些成熟技术中的可提高之处。</p>
+<p>不管是啥，你干的事都是有意义的。再不济，如果你的点子行不通，那么社区中的众人也能学到这种方法行不通。（给社区的提示：有没有用和欢不欢迎新人是由我们决定的）</p>
+<h4 id="不要一直在焦虑中工作"><a href="#不要一直在焦虑中工作" class="headerlink" title="不要一直在焦虑中工作"></a>不要一直在焦虑中工作</h4><p>技术每天都在推陈出新，这会让你觉得，你摸一晚上的鱼，你就会被整个世界落下。这是不对的。事实上，你会干的更好，如果你从过度紧张中解脱出来。你的观点会被刷新，并且，我发现，不工作的时候，有些新点子会下意识的涌现出来。</p>
+<p>每天都出现的那些的所谓的新技术，大体上都是把旧知识换了个包装而已。真正的革命性的技术革新，每几年才会发生一次。关于这个，可以去看看 Hammock Driven Development。</p>
+<h4 id="少花心思在浅层次的知识上"><a href="#少花心思在浅层次的知识上" class="headerlink" title="少花心思在浅层次的知识上"></a>少花心思在浅层次的知识上</h4><p>少花心思在不重要的事上是提升自己的技术的不二法门。换言之，也就是理智的使用你的时间。你每天的时间是有限的，如果你把这些时间花在一些深层次的东西上你会感觉很不一样。</p>
+<p>所以，什么是所谓的皮毛知识呢？这是因人而异的，但我可以给你举我自己的例子，我认为的皮毛知识有：语言的语法，API库，编程软件设置等。相较于学习编译器是怎么运行的，学习ES7的某个新语法对你的提升是很有限的。学习一个库的实现原理比死记硬背库的API有意思得多。当然，这些“皮毛知识”也是很重要的，但我还是推荐你花更多的时间在学习深层次的东西上，这会在之后的很多年里都给你回报。</p>
+<p>这里我要提个问题：你是否花了很多的时间在怎样让你的代码看上去好看上？如果是这样的，我建议你别花太多时间在上面。你的代码是会有很大改变的，随着时间的推移。你不如花更多注意力在如何解决核心问题和思考一下你的抽象层级上。待你确定你已经解决好了这些之后，你可以花点儿时间打磨一下你的代码。（这样你的代码也是很DRY的，别对这种问题担心过度，对充满重复性的工作放松一些。）</p>
+<h4 id="回顾前辈的研究"><a href="#回顾前辈的研究" class="headerlink" title="回顾前辈的研究"></a>回顾前辈的研究</h4><p>如果你对某个新点子激动不已，那你肯定很想坐下来就开始怼它。但你应该先粗略的研究一下前人是如何解决这个问题，然后才开始你的行动。花几天的时间研究一下前辈们的工作，总会让我彻底改变我对这个问题的原始解决方案。</p>
+<p>学习如何读学术文章是有价值的。我对“指示”、“操作”等专业术语的东西一无所知，所以我有很多文章看不懂。但（文章中）同样有很多的使用代码而不是数学符号（的内容）并不是那么难懂。过去三十年间的文献中，蕴含着海量的知识。如果你善于做这些事情的话，你将是一个思想上的领袖。</p>
+<p>Prettier就是个典型的例子。我知道我想要什么效果，但是我不知道怎么去事实它。在经过了一些调研后，我找到了一篇文章，然后过了几天，我就明白了我到底需要做些什么。我在每个工作日还得做一些基础工作。如果我忽略掉了提前调研的话，我就得话很多的时间去解决这个问题。</p>
+<p>如果你在找文献的话，你可以 star 一下 the Papers We Love 这个github库。</p>
+<h4 id="搞些大项目，挑战一下自己"><a href="#搞些大项目，挑战一下自己" class="headerlink" title="搞些大项目，挑战一下自己"></a>搞些大项目，挑战一下自己</h4><p>没有什么是比实战经验更宝贵的了。并不是每个人都有能做大项目的条件。但，如果你有时间的话，尝试着去做些大项目吧。你并非一定要完成这些项目。只要你尝试去解决一些事儿，就比如尝试去写个编译器，这会在你干这个事的最初的几周里教给你成吨的知识。</p>
+<p>说实话，我很讨厌不知道怎么解决一个复杂问题的时候。这很不爽。我知道我得花很多功夫，做很多研究，学习很多，在我只是单纯的接近解决方案之前。但我总会在挑战了这些困难之后变成一个更牛逼的程序员。</p>
+<p>开始学习一门新语言。这是最好的让你从旧语言的使用习惯中解脱出来，开发新思路的办法。对我而言，我作为一个年轻的程序员做过的最好的是事是学习 Scheme。这是一门很简单的语言，它会迫使你用函数式编程思想做所有事情，并且让你真正学习到代码运行的基本原理。我花在 Scheme 上的几年功夫，直到今天也一直对我有很大的帮助；我看代码的方式从根本上改变了。（我甚至给我的公司取名叫 Shift Reset LLC ，这是向 Scheme 中的 shift/reset 操作符致敬。）</p>
+<p>这里，我列一些我推荐去做的事。这些事都对我的程序员生涯产生了巨大的影响。其中的大部分工作，至今都在以微妙的方式产生着回报，并且会从思想上帮我煮结构一些新点子。你无须完全照做，有别的事也能帮助你成为更好的程序员，这些只是帮助我成长的事。</p>
+<ul>
+<li>学习C语言：学习基础的东西，如果你还没学过C语言的话。我认为，弄清楚为什么每个人都抱怨它是很值得的事。</li>
+<li>写个编译器：这也许是最好的挑战自己的方式了，查一查一个<a href="https://github.com/thejameskyle/the-super-tiny-compiler" target="_blank" rel="external">超级小型的编译器</a>是怎么实现的。</li>
+<li>学习 macros ：看看 Scheme，Lisp 或是 Clojure 。Macros 会非常显著的改变你看代码的方式。</li>
+<li>看SICP：<a href="https://mitpress.mit.edu/sicp/full-text/book/book.html" target="_blank" rel="external">SICP</a> 是一本我认为今天依然有意义的老书（有些人不赞同）。它只讲了比较少的编程知识，并且会一直引导你到实现元循环评估器和编译器。另一本让我受益匪浅并让在编译器学习之路精进不少的书是 <a href="https://www.amazon.com/Lisp-Small-Pieces-Christian-Queinnec/dp/0521545668" target="_blank" rel="external">Lisp In Small Pieces</a> 。</li>
+<li>理解 continuations ：<a href="https://en.wikipedia.org/wiki/Continuation" target="_blank" rel="external">Continuations</a> 是一种低等级的控制流机制。Scheme 是唯一一们继承了这些机制的语言，尽管你永远不会在你的生产中使用这门语言，但这些只是会改变你对控制流的思考。我写了篇<a href="http://jlongster.com/Whats-in-a-Continuation" target="_blank" rel="external">博客</a>解释这个。</li>
+<li>如果说还有什么建议的话，那就是尝试一门新语言了：不管你是做什么的，你都很应该去探索一下别的语言。我的推荐依次是：Clojure，Rust，Elm，OCaml/Reason，Go，或者 Scheme。这其中的每一门语言都有它独特的地方，会迫使你学习一种新的思考问题的方式。</li>
+</ul>
+<p style="text-align: center;"><b>… End …</b></p>
+
+
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/31/map、filter和reduce/" rel="next" title="map、filter和reduce">
+                <i class="fa fa-chevron-left"></i> map、filter和reduce
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/04/10/减肥的理由/" rel="prev" title="减肥对精神健康的作用">
+                减肥对精神健康的作用 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/timg.jpg"
+               alt="Jason Zou" />
+          <p class="site-author-name" itemprop="name">Jason Zou</p>
+           
+              <p class="site-description motion-element" itemprop="description">一生中净是耻辱</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/SuperBigSaltedFish" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://zerosrat.com/" title="Zero Yu 的博客" target="_blank">Zero Yu 的博客</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#原文出处："><span class="nav-number">1.</span> <span class="nav-text">原文出处：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#译者的话"><span class="nav-number">2.</span> <span class="nav-text">译者的话</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何成为更好的程序员"><span class="nav-number">3.</span> <span class="nav-text">如何成为更好的程序员</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#寻找给你灵感的人，但不要盲目崇拜他们"><span class="nav-number">3.1.</span> <span class="nav-text">寻找给你灵感的人，但不要盲目崇拜他们</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#切莫妄之菲薄"><span class="nav-number">3.2.</span> <span class="nav-text">切莫妄之菲薄</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#不要一直在焦虑中工作"><span class="nav-number">3.3.</span> <span class="nav-text">不要一直在焦虑中工作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#少花心思在浅层次的知识上"><span class="nav-number">3.4.</span> <span class="nav-text">少花心思在浅层次的知识上</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#回顾前辈的研究"><span class="nav-number">3.5.</span> <span class="nav-text">回顾前辈的研究</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#搞些大项目，挑战一下自己"><span class="nav-number">3.6.</span> <span class="nav-text">搞些大项目，挑战一下自己</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jason Zou</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

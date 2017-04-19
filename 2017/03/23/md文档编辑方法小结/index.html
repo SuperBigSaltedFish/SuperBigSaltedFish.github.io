@@ -1,0 +1,813 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="md文档," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="夹缝" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="好好学习，天天向上！  毛泽东 
+   
+　　这两天学习了md文档的编辑方法。不翻墙的话，在网上比较难找到一份十分详细的markdown标签文档（这是当然的，毕竟不同的环境里有不同的md“方言”），索性就按照wiki自己动笔写一份。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="md文档编辑方法小结">
+<meta property="og:url" content="http://jasonzou.me/2017/03/23/md文档编辑方法小结/index.html">
+<meta property="og:site_name" content="夹缝">
+<meta property="og:description" content="好好学习，天天向上！  毛泽东 
+   
+　　这两天学习了md文档的编辑方法。不翻墙的话，在网上比较难找到一份十分详细的markdown标签文档（这是当然的，毕竟不同的环境里有不同的md“方言”），索性就按照wiki自己动笔写一份。">
+<meta property="og:image" content="http://s13.sinaimg.cn/mw690/0028V8trzy6QIsLfTeA5c&690">
+<meta property="og:updated_time" content="2017-03-23T11:55:30.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="md文档编辑方法小结">
+<meta name="twitter:description" content="好好学习，天天向上！  毛泽东 
+   
+　　这两天学习了md文档的编辑方法。不翻墙的话，在网上比较难找到一份十分详细的markdown标签文档（这是当然的，毕竟不同的环境里有不同的md“方言”），索性就按照wiki自己动笔写一份。">
+<meta name="twitter:image" content="http://s13.sinaimg.cn/mw690/0028V8trzy6QIsLfTeA5c&690">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://jasonzou.me/2017/03/23/md文档编辑方法小结/"/>
+
+
+
+
+
+  <title> md文档编辑方法小结 | 夹缝 </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">夹缝</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://jasonzou.me/2017/03/23/md文档编辑方法小结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Jason Zou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/timg.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夹缝">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                md文档编辑方法小结
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-23T18:33:50+08:00">
+                2017-03-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/工具使用技巧/" itemprop="url" rel="index">
+                    <span itemprop="name">工具使用技巧</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote class="blockquote-center"><p>好好学习，天天向上！ <br> <strong>毛泽东</strong> </p>
+</blockquote>   
+<p>　　这两天学习了md文档的编辑方法。不翻墙的话，在网上比较难找到一份十分详细的markdown标签文档（这是当然的，毕竟不同的环境里有不同的md“方言”），索性就按照wiki自己动笔写一份。   </p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><pre><code>[图片名称](图片链接)
+</code></pre><p><img src="http://s13.sinaimg.cn/mw690/0028V8trzy6QIsLfTeA5c&amp;690" alt="星空">  </p>
+<h3 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h3><pre><code>*强调*  **加重强调** ***加重强调斜体***    
+_强调_ __加重强调__ ___加重强调斜体___
+</code></pre><p><em>强调</em> 、<strong>强调</strong> 、<strong><em>强调</em></strong><br><em>强调</em> 、 <strong>强调</strong> 、<strong><em>强调</em></strong>    </p>
+<h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><pre><code># 一级标题
+## 二级标题
+### 三级标题
+...
+###### 六级标题
+</code></pre><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><p>…</p>
+<h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><pre><code>一级标题
+==========
+二级标题
+----------
+</code></pre><h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><pre><code>&gt; 这段内容会成为引用内容
+</code></pre><blockquote>
+<p>被引用的内容 </p>
+<p>引用可以分成多行<br>    这是第二行</p>
+<blockquote>
+<p>这是引用中的嵌套引用。这是第一行<br>    这是第二行</p>
+</blockquote>
+<p>这是外层引用的第三行，前面要加一个空白的引用表示内层嵌套的结束，空行最前面的(‘&gt;’)可有可无。</p>
+<p>引用可以分成多行<br>这是第二行</p>
+<blockquote>
+<p>这是引用中的嵌套引用。这是第一行<br>这是第二行</p>
+</blockquote>
+<p>这是外层引用的第三行，前面要加一个空白的引用表示内层嵌套的结束，空行最前面的(‘&gt;’)可有可无。   </p>
+</blockquote>
+<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><pre><code>[链接标题](http://链接地址.com)
+</code></pre><p><a href="http://jasonzou.me">夹缝</a>  </p>
+<h3 id="水平区分线"><a href="#水平区分线" class="headerlink" title="水平区分线"></a>水平区分线</h3><pre><code>* * *
+***
+*****
+- - -
+-----------
+</code></pre><hr>
+<hr>
+<hr>
+<h2 id="-1"><a href="#-1" class="headerlink" title="- - -"></a>- - -</h2><h3 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h3><pre><code>文字之间，不论你空格多少次，都只会出现一个空格，并且在行首是不能添加空格的。解决方案：输出&amp;emsp; 
+或是将输入法切换到全角再空格即可。
+</code></pre><p>&emsp;&emsp;测试   </p>
+<h3 id="方言"><a href="#方言" class="headerlink" title="方言"></a>方言</h3><p>　　一如文章开头所说，md文档在不同的环境下是有其特有方言的。故而，全部列出意义并不大，我只是将最基本的语法列出，更多的语法可以参考以下链接：    </p>
+<ul>
+<li><a href="http://wowubuntu.com/markdown/" target="_blank" rel="external">这篇文章讲了md文档是如何兼容HTML的</a></li>
+<li><a href="http://mahua.jser.me/" target="_blank" rel="external">麻花</a></li>
+<li><a href="https://maxiang.io/" target="_blank" rel="external">马克飞象</a></li>
+</ul>
+<h3 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h3><p>　　最后，我必须提出，md文档最后是会转译为HTML文档的，因此，只要有基本的前端知识，理论上我们是可以写出任何样式的文本的。所有的md标记，只是让文档编辑更轻松而已，实在不知道某个样式所对应的标签，不妨就用HTML将其完成吧。</p>
+<p style="text-align: center;"><b>… End …</b></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/md文档/" rel="tag"># md文档</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/22/为什么净是耻辱/" rel="next" title="为什么净是耻辱">
+                <i class="fa fa-chevron-left"></i> 为什么净是耻辱
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/24/我目前的前端开发环境/" rel="prev" title="我目前的前端开发环境">
+                我目前的前端开发环境 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/timg.jpg"
+               alt="Jason Zou" />
+          <p class="site-author-name" itemprop="name">Jason Zou</p>
+           
+              <p class="site-description motion-element" itemprop="description">一生中净是耻辱</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/SuperBigSaltedFish" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://zerosrat.com/" title="Zero Yu 的博客" target="_blank">Zero Yu 的博客</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text"></span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#图片"><span class="nav-number">1.1.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#强调"><span class="nav-number">1.2.</span> <span class="nav-text">强调</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标题"><span class="nav-number">1.3.</span> <span class="nav-text">标题</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题"><span class="nav-number"></span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题"><span class="nav-number">1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三级标题"><span class="nav-number">1.1.</span> <span class="nav-text">三级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#六级标题"><span class="nav-number">1.1.0.0.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题-1"><span class="nav-number"></span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题-1"><span class="nav-number">1.</span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#引用"><span class="nav-number">1.1.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#链接"><span class="nav-number">1.2.</span> <span class="nav-text">链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#水平区分线"><span class="nav-number">1.3.</span> <span class="nav-text">水平区分线</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#-1"><span class="nav-number">2.</span> <span class="nav-text">- - -</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#空格"><span class="nav-number">2.1.</span> <span class="nav-text">空格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方言"><span class="nav-number">2.2.</span> <span class="nav-text">方言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最后"><span class="nav-number">2.3.</span> <span class="nav-text">最后</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jason Zou</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
