@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jasonzou.me/"/>
-  <updated>2017-04-19T02:43:29.000Z</updated>
+  <updated>2017-04-20T15:07:00.000Z</updated>
   <id>http://jasonzou.me/</id>
   
   <author>
@@ -20,13 +20,14 @@
     <link href="http://jasonzou.me/2099/12/31/%E7%9B%AE%E6%A0%87/"/>
     <id>http://jasonzou.me/2099/12/31/目标/</id>
     <published>2099-12-31T03:53:49.000Z</published>
-    <updated>2017-04-19T02:43:29.000Z</updated>
+    <updated>2017-04-20T15:07:00.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>欲取其中，必求其上；欲取其上，必求上上。 <br> <strong>《孙子兵法》</strong> </p>
 </blockquote>
 <p>　　我敬佩的人们都具备一个相同的特质，他们是我最喜欢的一位作家口中的“征服者”。他们言出必行，每当决定要去的某个地方，那就一定会去到那里，不管其间有多少艰难险阻，都不曾见他们的斗志消磨殆尽。他们是这个社会中的“优胜者”，是更适应当前社会的“优等人类”。我敬佩的人，也同时是我羡慕的人，我羡慕那种<strong>“脚步一旦迈出，全世界都会为其让路”</strong>的感觉。<a id="more"></a><br>　　尽管我不是“征服者”，但我却不曾间断过“如果我是征服者，那么……”这样的幻想。和幻想成为征服者一样，订立目标对我而言，是一种精神上的<strong>自慰</strong>。目标越详细，越是会产生一种它已经被完成了的快感。代价是，到最后，目标往往都是被我废弃遗忘了的，我必须要承受这份痛苦。就像自慰后的少年，发现自己并不能靠近脑海中的姑娘一点半点一样，痛苦和羞耻感油然而生。<br>　　深知自己难以完成预设目标，但还是必须用目标驱动自己，如果说设下目标的我会因为屡次无法走到目标而痛苦，那么不定目标的我是寸步难行的。因此，我仍将在这夹缝中记下目标，倒不如说，是记下我对我自己的恳求。其中第一个恳求是：<strong>希望自己能每三天总结一次，之前三天做完的事，和之后三天要做的事</strong>（唯独这一个恳求，是希望自己无论如何也不要弃之不顾的）。<br>　　<strong><em>我依然渴望当一个征服者，哪怕是只存在于这夹缝之中的征服者</em></strong> 。</p>
 <h3 id="TODO总表–记录能想到的需要做的事（琐事另外记录）"><a href="#TODO总表–记录能想到的需要做的事（琐事另外记录）" class="headerlink" title="TODO总表–记录能想到的需要做的事（琐事另外记录）"></a>TODO总表–记录能想到的需要做的事（琐事另外记录）</h3><ul>
 <li>补考学习计划<ul>
+<li>思考怎么抽时间做补考准备。</li>
 <li>C语言<ul>
 <li><del>看考题，订立学习计划。</del></li>
 <li><del>复习基础知识，第二周前。</del></li>
@@ -114,22 +115,24 @@
 <li><del>写完 <em>JavaScript如何面向对象</em>。</del></li>
 <li><del>写减肥论文。</del></li>
 <li><del>写《记自己第一次下厨》。</del></li>
+<li>转载《Javascript 中的上下文，我的认识的三个阶段》邹业盛。</li>
 <li>写昭和元禄落语心中观后感——口口相传。</li>
 <li>写《谈美》读后感：风行水上，自然成纹。</li>
 <li><del>转载《浅析 NodeJs 的几种文件路径》。</del></li>
 <li><del>总结 Safari localhost 跨域问题。</del></li>
 <li><del>总结魅族 localhost 上文件无法加载问题。</del></li>
 <li>写《一个叫欧维的男人决定去死》读后感：虽然这是假人们的舞蹈。</li>
+<li>写“关于如何抽时间做自己不想做的事”总结。</li>
 <li><del>翻译《How I Became a Better Programmer》<a href="http://jlongster.com/How-I-Became-Better-Programmer" target="_blank" rel="external">How I Became a Better Programmer</a>。</del></li>
 <li><del>转载《MVC , MVP ,MVVM的区别和联系》。</del></li>
 <li><del>总结 map, reduce, filter的用法和应用场景。</del></li>
 </ul>
 </li>
 <li>LOL（这是我今年最重要的事）<ul>
-<li>打上钻石</li>
+<li>打上钻石。</li>
 </ul>
 </li>
-<li>给鸵鸟写生日祝福</li>
+<li>给鸵鸟写生日祝福。</li>
 </ul>
 <h3 id="琐事（特别有重复性的事如洗澡吃饭换衣服等仅记录第一次）"><a href="#琐事（特别有重复性的事如洗澡吃饭换衣服等仅记录第一次）" class="headerlink" title="琐事（特别有重复性的事如洗澡吃饭换衣服等仅记录第一次）"></a>琐事（特别有重复性的事如洗澡吃饭换衣服等仅记录第一次）</h3><ul>
 <li><del>打印<strong><em>跟读协议</em></strong> 。</del></li>
@@ -141,10 +144,10 @@
 <li><del>邮寄<strong><em>跟读协议</em></strong> 回学院。</del></li>
 <li><del>实现博客快捷部署。</del></li>
 <li>马原<ul>
-<li>马原网课</li>
-<li>马原作业1</li>
-<li>马原作业2</li>
-<li>马原作业3</li>
+<li><del>上马原网课。</del></li>
+<li>做马原作业1。</li>
+<li>做马原作业2。</li>
+<li>做马原作业3。</li>
 </ul>
 </li>
 </ul>
@@ -222,7 +225,7 @@
 <li>处理杂事<ul>
 <li><del>买彩票。</del></li>
 <li><del>买菜。</del></li>
-<li>找《昭和元禄落语心中》第一季资源。</li>
+<li><del>找《昭和元禄落语心中》第一季资源。</del></li>
 </ul>
 </li>
 <li><del>阅读《你不知道的JavaScript》。</del></li>
@@ -230,7 +233,16 @@
 <li>补完《昭和元禄落语心中》第一季。</li>
 <li>看一章C语言。</li>
 <li><del>实现博客的快捷部署。</del></li>
-<li>看一章计网。</li>
+<li>看一章计网。<h4 id="拾（17-04-21-17-04-23）"><a href="#拾（17-04-21-17-04-23）" class="headerlink" title="拾（17.04.21-17.04.23）"></a>拾（17.04.21-17.04.23）</h4></li>
+<li>处理杂事<ul>
+<li>买衣服。</li>
+</ul>
+</li>
+<li>转载《Javascript 中的上下文，我的认识的三个阶段》邹业盛。</li>
+<li>给鸵鸟写生日祝福。</li>
+<li>做马原作业1。</li>
+<li>思考怎么抽时间做补考准备。</li>
+<li>写“关于如何抽时间做自己不想做的事”总结。</li>
 </ul>
 ]]></content>
     
