@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jasonzou.me/"/>
-  <updated>2017-04-26T08:10:33.000Z</updated>
+  <updated>2017-05-03T09:45:25.000Z</updated>
   <id>http://jasonzou.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://jasonzou.me/2099/12/31/%E7%9B%AE%E6%A0%87/"/>
     <id>http://jasonzou.me/2099/12/31/目标/</id>
     <published>2099-12-31T03:53:49.000Z</published>
-    <updated>2017-04-26T08:10:33.000Z</updated>
+    <updated>2017-05-03T09:45:25.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>欲取其中，必求其上；欲取其上，必求上上。 <br> <strong>《孙子兵法》</strong> </p>
 </blockquote>
@@ -69,7 +69,7 @@
 </ul>
 </li>
 <li>前端工程化<ul>
-<li>学习CSS预编译工具。</li>
+<li><del>学习CSS预编译工具。</del></li>
 <li>了解gulp、grunt。</li>
 <li>学习前端测试工具。</li>
 <li>学习ESLint使用。</li>
@@ -103,6 +103,7 @@
 </ul>
 </li>
 <li>影视<ul>
+<li>看《攻壳机动队》。</li>
 <li>看《一个叫欧维的男人决定去死》电影。</li>
 <li>补完昭和元禄落语心中第一季。</li>
 </ul>
@@ -113,17 +114,19 @@
 </li>
 <li>blog<ul>
 <li>将blog目录部署到gh-pages分支。</li>
+<li>写less预编译工具使用总结。</li>
 <li><del>写完 <em>JavaScript如何面向对象</em>。</del></li>
 <li><del>写减肥论文。</del></li>
 <li><del>写《记自己第一次下厨》。</del></li>
 <li><del>转载《Javascript 中的上下文，我的认识的三个阶段》邹业盛。</del></li>
 <li>写昭和元禄落语心中观后感——口口相传。</li>
-<li>写《谈美》读后感：风行水上，自然成纹。</li>
+<li><del>写《谈美》读后感：风行水上，自然成纹。</del></li>
 <li><del>转载《浅析 NodeJs 的几种文件路径》。</del></li>
 <li><del>总结 Safari localhost 跨域问题。</del></li>
 <li><del>总结魅族 localhost 上文件无法加载问题。</del></li>
 <li>写《一个叫欧维的男人决定去死》读后感：虽然这是假人们的舞蹈。</li>
-<li>写“关于如何抽时间做自己不想做的事”总结。</li>
+<li>写一篇告访客。</li>
+<li><del>写“关于如何抽时间做自己不想做的事”总结。</del></li>
 <li><del>翻译《How I Became a Better Programmer》<a href="http://jlongster.com/How-I-Became-Better-Programmer" target="_blank" rel="external">How I Became a Better Programmer</a>。</del></li>
 <li><del>转载《MVC , MVP ,MVVM的区别和联系》。</del></li>
 <li><del>总结 map, reduce, filter的用法和应用场景。</del></li>
@@ -252,14 +255,25 @@
 <li>看一章《微积分2》。</li>
 <li><del>写《谈美》读后感：风行水上，自然成纹。</del><h4 id="拾贰（17-04-27-17-04-29）"><a href="#拾贰（17-04-27-17-04-29）" class="headerlink" title="拾贰（17.04.27-17.04.29）"></a>拾贰（17.04.27-17.04.29）</h4></li>
 <li>处理杂事<ul>
-<li>接机</li>
-<li>买春装外套</li>
-<li>买短袖</li>
-<li>订接机的车</li>
+<li><del>接机。</del></li>
+<li>买春装外套。</li>
+<li><del>买短袖。</del></li>
+<li>买《精通CSS》和《CSS揭秘》。</li>
+<li><del>订接机的车。</del></li>
 </ul>
 </li>
-<li>看《乌合之众》。</li>
-<li>看一章《C语言》。</li>
+<li><del>看《乌合之众》。</del></li>
+<li>看一章《C语言》。<h4 id="拾叁（17-04-30-17-05-02）"><a href="#拾叁（17-04-30-17-05-02）" class="headerlink" title="拾叁（17.04.30-17.05.02）"></a>拾叁（17.04.30-17.05.02）</h4></li>
+<li>处理杂事<ul>
+<li>洗衣服。</li>
+<li>买书。<h4 id="拾肆（17-05-03-17-05-05）"><a href="#拾肆（17-05-03-17-05-05）" class="headerlink" title="拾肆（17.05.03-17.05.05）"></a>拾肆（17.05.03-17.05.05）</h4></li>
+</ul>
+</li>
+<li><del>晨跑。</del></li>
+<li>读完《乌合之众》。</li>
+<li><del>学习css预编译工具。</del></li>
+<li>写less预编译工具使用总结。</li>
+<li>写一篇告访客。</li>
 </ul>
 <!-- 来必力City版安装代码 -->
 <p><div id="lv-container" data-id="city" data-uid="MTAyMC8yODMxOC80ODkw"><br>  <script type="text/javascript"><br>   (function(d, s) {<br>       var j, e = d.getElementsByTagName(s)[0];</p>
@@ -270,8 +284,7 @@ j.src = &apos;https://cdn-city.livere.com/js/embed.dist.js&apos;;
 j.async = true;
 
 e.parentNode.insertBefore(j, e);
-</code></pre><p>   })(document, ‘script’);<br>  </script></div></p>
-<p><noscript> 为正常使用来必力评论功能请激活JavaScript</noscript><br><br><!-- City版安装代码已完成 --></p>
+</code></pre><p>   })(document, ‘script’);<br>  </script><br>  <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript><br></div><br><!-- City版安装代码已完成 --></p>
 ]]></content>
     
     <summary type="html">
@@ -288,11 +301,95 @@ e.parentNode.insertBefore(j, e);
   </entry>
   
   <entry>
+    <title>【置顶】访客，我的朋友，你需要知道</title>
+    <link href="http://jasonzou.me/2098/05/03/%E8%AE%BF%E5%AE%A2%EF%BC%8C%E6%88%91%E7%9A%84%E6%9C%8B%E5%8F%8B%EF%BC%8C%E4%BD%A0%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93/"/>
+    <id>http://jasonzou.me/2098/05/03/访客，我的朋友，你需要知道/</id>
+    <published>2098-05-03T15:15:24.000Z</published>
+    <updated>2017-05-04T02:19:31.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>　　能到这里看我胡诌乱道的，应该都是我的熟人朋友们，想必对我也比较了解。本不该很不礼貌地说以下这些废话，但是出于保险起见，我还是想在此提醒一下访客们一些东西：<a id="more"></a></p>
+<h3 id="我为什么写？"><a href="#我为什么写？" class="headerlink" title="我为什么写？"></a>我为什么写？</h3><p>　　因为我有话想说，心中有风，才有纸面上的波纹荡漾。或是我有事想记、需要记、值得记。</p>
+<h3 id="为什么是“胡诌”？"><a href="#为什么是“胡诌”？" class="headerlink" title="为什么是“胡诌”？"></a>为什么是“胡诌”？</h3><p>　　这是一个提醒：我一方面是在瞎写，一方面也是在尝试创作。实在是不好意思称自己写的东西为艺术作品，但我也不能否认自己是在尝试模仿创造艺术作品，而我认为“艺术，理应震慑人心”。所以写的东西往往是极端的、高度抽象的、是从最能感动我的某些东西中尽力凝练出来的。我不知道这样解释是否可以消除误会，同时我也担心会增加新的误会，所以又得紧接着再解释一下：我所说的“抽象出的东西”不是“假的”东西。它极端，但是它同样是真实的，只是尽可能地刨除干扰后，会让它看上去有那么一点面目狰狞。同时，它虽然是真实的，但是他又是不单独存在于现实条件中的。<br>　　我只能如是解释了，如果还是觉得我没说明白，你大可以把所有的“胡诌”都理解为夸张，瞎扯，那也比产生别的不必要的误会要好很多。</p>
+<h3 id="为什么是“最无用的东西”？"><a href="#为什么是“最无用的东西”？" class="headerlink" title="为什么是“最无用的东西”？"></a>为什么是“最无用的东西”？</h3><p>　　执行力这种东西是深入骨髓的，几篇鸡汤文，打几针鸡血是改变不了本质的。所以我会一边鼓励自己，一边告诫自己万万不可沉醉进鼓励当中，否则就真的是万劫不复了。</p>
+<h3 id="你可以"><a href="#你可以" class="headerlink" title="你可以"></a>你可以</h3><p>　　我是一个喜欢想问题的人，同时也是一个喜欢懒散、喜欢无厘头的人，你有什么想说的想问的想提议的想纠正的，都可以给我讲。不要被我写下的东西误导甚至吓到了，要记住：所有的这一切都不是我，所有的一切加在一起才是我。<br>　　如你所见，我是一个孤独的人，孤独的人都是很好相处的。</p>
+<h3 id="你不可以"><a href="#你不可以" class="headerlink" title="你不可以"></a>你不可以</h3><p>　　你不可以不经过我的同意把我写的东西挪到别处。另外：我不建议你抱着我觉得作者是个傻逼但我不告诉他这样他就不知道我觉得他是一个傻逼的心态来和我交流，我不介意你的批评，但是我介意尴尬的气氛，毕竟我可能要假装不知道你觉得我是个傻逼但是你不告诉我这样就以为我不知道你觉得我是一个傻逼。这样会非常的尴尬。</p>
+<h3 id="待续"><a href="#待续" class="headerlink" title="待续"></a>待续</h3><p>　　以后的读者可能会变化，所以以后可能还会更新。</p>
+<p style="text-align: center;"><b>… 待续 …</b></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　能到这里看我胡诌乱道的，应该都是我的熟人朋友们，想必对我也比较了解。本不该很不礼貌地说以下这些废话，但是出于保险起见，我还是想在此提醒一下访客们一些东西：
+    
+    </summary>
+    
+      <category term="最无用的东西" scheme="http://jasonzou.me/categories/%E6%9C%80%E6%97%A0%E7%94%A8%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>用LESS升级CSS</title>
+    <link href="http://jasonzou.me/2017/05/03/%E7%94%A8less%E4%BB%A3%E6%9B%BFcss/"/>
+    <id>http://jasonzou.me/2017/05/03/用less代替css/</id>
+    <published>2017-05-03T11:42:06.000Z</published>
+    <updated>2017-05-04T03:44:57.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>Brevity is the soul of wit. <br> <strong>William Shakespeare</strong> </p>
+</blockquote>   
+<p>　　学习了一下 LESS 的使用，在此简单记录用法，并总结一下自己的思考。<a id="more"></a></p>
+<h3 id="为什么使用预编译工具？"><a href="#为什么使用预编译工具？" class="headerlink" title="为什么使用预编译工具？"></a>为什么使用预编译工具？</h3><p>　　我本打算将文章命名为“用 LESS 替代 CSS ”。但发现这样的说法很不合理，LESS 是一个 CSS 预编译工具，和其他的 CSS 预编译工具一样，它们的工作是基于 CSS 的。我的理解是，它们就像 ES2015 为 ES5 所提供的诸多语法糖一样，并非替代 CSS ，而是“升级” CSS 。总之使用预编译工具的目的，在我看来有两点：</p>
+<ul>
+<li>让 CSS 代码更 DRY 。</li>
+<li>让前端们写CSS时更加得心应手。</li>
+</ul>
+<h3 id="为什么使用-LESS-而不是-SASS-或-Stylus"><a href="#为什么使用-LESS-而不是-SASS-或-Stylus" class="headerlink" title="为什么使用 LESS 而不是 SASS 或 Stylus ?"></a>为什么使用 LESS 而不是 SASS 或 Stylus ?</h3><p>　　先说前两个。 LESS 和 SASS 很像：LESS 是其作者受到 SASS 的启发后开发而出的。但二者之间还是略有区别，首先 SASS 的 Scope 和别的编程语言不类似，变量“查值”时不是逐级向“外层”找的，而是直接“扁平”地向上找的。换种说法，可以理解为所有的变量都是全局变量。与之相对的 LESS 则是逐级向“外层”查找变量的。这让我这种写JS的程序员看着闹心，这是从感情上讲不喜欢 SASS 的原因。此其一。第二：SASS 不能兼容 CSS 。这是让我觉得最尴尬的地方。虽然在进行改进更新之后还是兼容了。但是，这种行为让我怀疑其开发者的思路。看《JavaScript DOM 编程艺术》后，我明白了“平稳退化”的重要性。但 SASS 的行为违背了这种思想。同样是进行改进工作的 TypeScript ，作为 JavaScript 的超集，完全兼容 JavaScript 。对比之后，高下立判（也许是我对这个问题的认识还不够，理解不了其作者的意图吧）。第三：SASS 功能“过于”强大了。它甚至支持 IF 和 FOR 。。。我不明白这是要做什么。从我刚开始学前端开始，我就被前辈训诫要记住一些基本的原则，其中包括：前端开发中应尽可能的保持结构、样式和功能分离。(X)HTML 文档负责结构，CSS 负责样式，JavaScript 负责功能。条件判断真的是需要由 CSS 来做的工作吗？除非是一个真的几乎不需要写 JavaScript 的项目，那用 SASS 写一些逻辑我认为可以理解。但如果是普通的项目我实在是不认为应该把逻辑交由 CSS 来写。<br>　　看到这里，也应该明白我为什么不愿意用 Styules 了。和上述的第三点是一样的，Stylus 打着更贴近 JavaScript 的旗号，吸了不少粉。为什么 CSS 需要更贴近 JavaScript ，那我们为什么要 JavaScript ？还是说作者有更美好的愿景准备把 JavaScript 淘汰掉或者退一步讲只是准备在 某些场景完全淘汰掉 JavaScript ？我不明白，我不理解。<br>　　当然不是说 SASS 和 Styuls 不好，我只是说我不理解，我不理解所以不用，毕竟眼看着就要过了可以随心所欲不求甚解囫囵吞枣的年纪和阶段了。<br>　　话又说回来， LESS 在经历更新后也增加了对 IF 等条件判断语句的支持，让 CSS 更像一门普通的编程语言。但，我认为 LESS 的初衷更符合我对我所做之事的理解。所以我用 LESS 。题外话：于我而言，这个选择也是对于戒骄戒躁不浮夸不虚伪的努力践行。</p>
+<h3 id="LESS-用法"><a href="#LESS-用法" class="headerlink" title="LESS 用法"></a>LESS 用法</h3><h4 id="安装为可执行文件"><a href="#安装为可执行文件" class="headerlink" title="安装为可执行文件"></a>安装为可执行文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install less -g（以全局安装为例）</div></pre></td></tr></table></figure>
+<p>　　安装完毕后，直接在命令行使用就行了，如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ lessc bootstrap.less bootstrap.css</div><div class="line">//将.less 文件编译为.css 文件</div></pre></td></tr></table></figure></p>
+<p>　　options 在这里查看：<a href="http://less.bootcss.com/usage/" target="_blank" rel="external">命令行用法</a></p>
+<h4 id="配合webpack使用"><a href="#配合webpack使用" class="headerlink" title="配合webpack使用"></a>配合webpack使用</h4><ul>
+<li>安装 less-loader 。</li>
+<li>阅读 webpack <a href="http://zhaoda.net/webpack-handbook/configuration.html" target="_blank" rel="external">文档</a>。</li>
+</ul>
+<h4 id="更多使用方法"><a href="#更多使用方法" class="headerlink" title="更多使用方法"></a>更多使用方法</h4><p>　　如果前两种都不能满足需求可以去查<a href="http://less.bootcss.com/usage/" target="_blank" rel="external">官方文档</a>。</p>
+<h3 id="LESS-特性"><a href="#LESS-特性" class="headerlink" title="LESS 特性"></a>LESS 特性</h3><p>　　在这里简单记录一下 LESS 的主要特性。</p>
+<h4 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h4><p>　　可以用 @ 定义变量：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div></pre></td><td class="code"><pre><div class="line">// Variables</div><div class="line">@link-color:        #428bca; // sea blue</div><div class="line">@link-color-hover:  darken(@link-color, 10%);</div><div class="line"></div><div class="line">// 用法</div><div class="line">a,</div><div class="line">.link &#123;</div><div class="line">  color: @link-color;</div><div class="line">&#125;</div><div class="line">a:hover &#123;</div><div class="line">  color: @link-color-hover;</div><div class="line">&#125;</div><div class="line">.widget &#123;</div><div class="line">  color: #fff;</div><div class="line">  background: @link-color;</div><div class="line">&#125;</div><div class="line"></div><div class="line">// 1.4.0 之后还支持：</div><div class="line">// Variables</div><div class="line">@mySelector: banner;</div><div class="line"></div><div class="line">// Usage</div><div class="line">.@&#123;mySelector&#125; &#123;</div><div class="line">  font-weight: bold;</div><div class="line">  line-height: 40px;</div><div class="line">  margin: 0 auto;</div><div class="line">&#125;</div><div class="line"></div><div class="line">// Variables</div><div class="line">@images: &quot;../img&quot;;</div><div class="line"></div><div class="line">// 用法</div><div class="line">body &#123;</div><div class="line">  color: #444;</div><div class="line">  background: url(&quot;@&#123;images&#125;/white-sand.png&quot;);</div><div class="line">&#125;</div><div class="line"></div><div class="line">// Variables</div><div class="line">@themes: &quot;../../src/themes&quot;;</div><div class="line"></div><div class="line">// Usage</div><div class="line">@import &quot;@&#123;themes&#125;/tidal-wave.less&quot;;</div><div class="line"></div><div class="line">// 1.6.0 之后支持：</div><div class="line">@property: color;</div><div class="line"></div><div class="line">.widget &#123;</div><div class="line">  @&#123;property&#125;: #0ee;</div><div class="line">  background-@&#123;property&#125;: #999;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>　　LESS 中，变量是懒加载的，所以先后定义变量不影响编译时查值。此外：LESS 作用域和 JavaScript 基本相同。</p>
+<h4 id="Mixin"><a href="#Mixin" class="headerlink" title="Mixin"></a>Mixin</h4><p>　　CSS 类中可以嵌套 CSS 类：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div></pre></td><td class="code"><pre><div class="line">// input</div><div class="line">.a, #b &#123;</div><div class="line">  color: red;</div><div class="line">&#125;</div><div class="line">.mixin-class &#123;</div><div class="line">  .a();</div><div class="line">&#125;</div><div class="line">.mixin-id &#123;</div><div class="line">  #b();</div><div class="line">&#125;</div><div class="line">//output</div><div class="line">.a, #b &#123;</div><div class="line">  color: red;</div><div class="line">&#125;</div><div class="line">.mixin-class &#123;</div><div class="line">  color: red;</div><div class="line">&#125;</div><div class="line">.mixin-id &#123;</div><div class="line">  color: red;</div><div class="line">&#125;</div><div class="line"></div><div class="line">// 注意对比： </div><div class="line">// input</div><div class="line">.my-mixin &#123;</div><div class="line">  color: black;</div><div class="line">&#125;</div><div class="line">.my-other-mixin() &#123;</div><div class="line">  background: white;</div><div class="line">&#125;</div><div class="line">.class &#123;</div><div class="line">  .my-mixin;</div><div class="line">  .my-other-mixin;</div><div class="line">&#125;</div><div class="line">// output</div><div class="line">.my-mixin &#123;</div><div class="line">  color: black;</div><div class="line">&#125;</div><div class="line">.class &#123;</div><div class="line">  color: black;</div><div class="line">  background: white;</div><div class="line">&#125;</div><div class="line"></div><div class="line">// 可以带参数使用：</div><div class="line">// input</div><div class="line">.border-radius(@radius) &#123;</div><div class="line">  -webkit-border-radius: @radius;</div><div class="line">     -moz-border-radius: @radius;</div><div class="line">          border-radius: @radius;</div><div class="line">&#125;</div><div class="line"></div><div class="line">#header &#123;</div><div class="line">  .border-radius(4px);</div><div class="line">&#125;</div><div class="line">.button &#123;</div><div class="line">  .border-radius(6px);</div><div class="line">&#125;</div><div class="line"></div><div class="line">.border-radius(@radius: 5px) &#123;</div><div class="line">  -webkit-border-radius: @radius;</div><div class="line">     -moz-border-radius: @radius;</div><div class="line">          border-radius: @radius;</div><div class="line">&#125;</div><div class="line"></div><div class="line">// 你甚至可以：</div><div class="line">.mixin() &#123;</div><div class="line">  @width:  100%;</div><div class="line">  @height: 200px;</div><div class="line">&#125;</div><div class="line"></div><div class="line">.caller &#123;</div><div class="line">  .mixin();</div><div class="line">  width:  @width;</div><div class="line">  height: @height;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>　　这是一个非常方便的功能，但是输出的 CSS <a href="http://www.cnblogs.com/kidsitcn/p/4916767.html" target="_blank" rel="external">不够DRY</a>。我们需要 Extend 。</p>
+<h4 id="Extend"><a href="#Extend" class="headerlink" title="Extend"></a>Extend</h4><p>　　Extend 和 Mixin 类似，但输出不同：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">//仔细和上面的例子对比：</div><div class="line">// input</div><div class="line">nav ul &#123;</div><div class="line">  &amp;:extend(.inline);</div><div class="line">  background: blue;</div><div class="line">&#125;</div><div class="line">.inline &#123;</div><div class="line">  color: red;</div><div class="line">&#125;</div><div class="line">// output</div><div class="line">nav ul &#123;</div><div class="line">  background: blue;</div><div class="line">&#125;</div><div class="line">.inline,</div><div class="line">nav ul &#123;</div><div class="line">  color: red;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h4 id="高级用法"><a href="#高级用法" class="headerlink" title="高级用法"></a>高级用法</h4><p>　　所谓的高级用法，就是条件判断，循环等语法。我是不那么支持过多使用这些语法的，复杂的项目中过多的使用这些东西会让 UI 部分的代码很难维护。如果要学习的话，移步<a href="http://less.bootcss.com/features/" target="_blank" rel="external">官方文档</a>吧。</p>
+<p style="text-align: center;"><b>… End …</b></p>
+
+<p>　　
+　　</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;Brevity is the soul of wit. &lt;br&gt; &lt;strong&gt;William Shakespeare&lt;/strong&gt; &lt;/p&gt;
+&lt;/blockquote&gt;   
+&lt;p&gt;　　学习了一下 LESS 的使用，在此简单记录用法，并总结一下自己的思考。
+    
+    </summary>
+    
+      <category term="工具使用技巧" scheme="http://jasonzou.me/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+    
+    
+      <category term="webpack" scheme="http://jasonzou.me/tags/webpack/"/>
+    
+      <category term="css" scheme="http://jasonzou.me/tags/css/"/>
+    
+      <category term="前端工程化" scheme="http://jasonzou.me/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
     <title>我帮你去看看你的爷爷吧</title>
     <link href="http://jasonzou.me/2017/04/27/%E6%88%91%E5%B8%AE%E4%BD%A0%E5%8E%BB%E7%9C%8B%E7%9C%8B%E4%BD%A0%E7%9A%84%E7%88%B7%E7%88%B7%E5%90%A7/"/>
     <id>http://jasonzou.me/2017/04/27/我帮你去看看你的爷爷吧/</id>
     <published>2017-04-26T17:10:15.000Z</published>
-    <updated>2017-04-26T18:56:38.000Z</updated>
+    <updated>2017-05-04T02:53:48.000Z</updated>
     
     <content type="html"><![CDATA[<p>　　我有两个姐姐，这个姐姐是姑妈的女儿。<br>　　姐姐的爷爷去世了。<br><a id="more"></a><br>　　睡前看到朋友圈里面，姐姐写了长文祭奠突然去世的爷爷。姐姐还在澳大利亚，不能及时赶回见爷爷最后一面。<br>　　姐姐很难过。爷爷生前非常疼爱她，每周都要通电话，大事小事都想过问。这样的关系，我是很羡慕的，而由羡慕生发的难过也着实刺痛我心。我不忍心看到美好的事物陨灭，一个慈祥的爷爷离世，一段亲密的爷孙关系到头，一位美丽的少女我的姐姐随之哭作泪人。<br>　　我想为姐姐做些什么来稀释她的痛苦，姐姐尚在异乡，因此我想：若是她最近回不到家的话，我想趁回成都的机会替她去给爷爷上一炷香，捎几句话。<br>　　然而通讯录找到她后，我又实在不知道该怎么开口，问些什么好，说些什么合适。<br>　　姐姐啊，怕是在您的心中，我都已经不是您的弟弟了吧？又或是，在您的心中，“弟弟”已经算不上是什么值得忆及的亲人了吧。真的很抱歉，没能让你成为一个对“弟弟”二字充满温暖回忆的人。<br>　　哪怕我很少被你想起了，但你还是会不时出现在我的梦里。我曾说过，小学是我目前为止唯一一段快乐的时光，而你也是那段快乐时光中不可或缺的一部分。<br>　　姐姐，对于小时候的我是十分特殊的。她代表着我的向往，姐姐成绩很好，写得一手好书法，有很多的玩具，家里有电脑，朋友很多，文静，漂亮，和姐姐聊天会非常开心。在姐姐家玩过的大富翁是我童年的珍宝之一，我很少赢姐姐，但我并不会因此不开心，只会觉得不甘心，想和姐姐再玩一局，而每一局都会是充满乐趣的。能玩姐姐的玩具，踩在姐姐卧室的木地板上，吹姐姐房间的空调，吃姐姐买的零食，看姐姐租的阿凡提。这些都是儿时的我极度向往的事情。我总是习惯性地想去找姐姐玩。就连稍微长大之后，只要有姐姐在的地方我也总喜欢跟着姐姐。<br>　　我也从不会觉得姐姐会不喜欢我去她那里玩，我总觉得，姐姐是乐意当我的姐姐的。<br>　　我相信很长一段时间里也确实是这样的。<br>　　后来姐姐去了成都读书，不常回来，我也不常见她了。总以为血缘的纽带是坚不可摧的，姐姐永远都会是我的姐姐。<br>　　真正再长大些，姐姐自然比我更大些。那时我们见面多是在过年走亲戚的时候，姐姐开始会吵着要提前回家了，我和弟弟（当然也是姐姐的弟弟）只能两个人一块儿想办法怎么玩。<br>　　那之后，当然是现在回首才发现，那之后，我心中的姐姐，和那个端着平板戴着耳机看剧的少女，已经不是一个人了。<br>　　小时候从未想过，也绝对想不到，姐姐有时是会嫌弃我这个弟弟。<br>　　的确，姐姐穿着一身搭配得体的漂亮衣服时，我还穿着妈妈织给我的毛衣加上胡乱搭上的运动裤和臃肿的外套。我有了我的第一台学习机时，姐姐说：这种东西没什么用，我倒是会偶尔借同学的来查查单词。我还不敢向姑娘表白，或是只知道把所有情感一股脑写进情书里给喜欢的女孩看的时候，姐姐已经谈过两三次恋爱了。我还一天到晚想着打游戏的时候，姐姐已经看了不少书，上网也不和我做同样的事了。<br>　　真是一个不知道让人怎么去喜欢的弟弟啊。<br>　　再之后，我已经不再那么寒酸窘迫的时候，和姐姐的关系倒是好过一小段时间。只是那时候都太忙，也没有刻意去联系。我总想着，姐姐总还是我的姐姐啊。而后来，尤其是到了今天，才顿觉：何来的什么“总还是我的姐姐”啊？！<br>　　说是明白了血缘的纽带是会被打破的，倒不如该感谢血缘的纽带竟然如此强韧，时隔那么久才终于让姐姐把我从她生命的内圈赶到了外圈。<br>　　要说以前的姐姐总是走在我前面，那么现在，我们已经算是走上了人生的两条路了。她在海外求学，以后会嫁到称得上她的家庭，而我在国内，大学毕业后会当一个普通的职员，开始准备养自己的家庭。<br>　　我不知道该说些什么。<br>　　我当然不能去责骂年幼时的我，虽然那时候的我没有当好一个弟弟，没能成为一个让姐姐和同学聊天时也能自豪的说出口的弟弟。可是我没办法责怪那时候的自己，一是因为我那时并没有做出任何选择，再重复一万次，我也还是那个样的我自己，所以没有后悔，二是那时的我真的非常敬重喜爱自己的这位姐姐，我没有理由去责怪一个情感真挚的尚不知世故冷暖的小孩。<br>　　我没有什么做错了的选择，也的确没有谁可以怪罪。可是我还是会忍不住地长吁短叹，忍不住在梦到姐姐再次和我聊天之后泪下沾衿。要说我童年有什么最最喜欢的人或事，姐姐她必定是我最最喜欢的人里面的前三甲。作为对比，有朝一日姐姐看到我时，心中给出的陈述怕只会是：小时候总来找我玩的弟弟。仅此而已。我实在是没办法不感到愧疚。<br>　　我也是很期望成为别人的美好回忆的，更不必说她是我曾经的至亲至爱之一。<br>　　倘若真的我们的人生本就不会在同一条道路上走太久，那起码在想起我的时候，是能让嘴角上扬的吧！<br>　　总之，可是，我身在异乡的姐姐啊，我既不在你生命的内圈中，也不是你回忆中的某束暖阳。我到底应该如何开口，以一个什么样的身份开口，才能让你同意，让我替你去给你逝去的爷爷上一炷香呢？我要说些什么，才能让你难受的心情缓和一些呢？我要怎么做，才能让你在我主动找你聊天时，你不三言两语应付我让我有话却不敢开口呢？<br>　　现在是夜里三点，身在澳大利亚的你再过不久就要醒来了，而我也必须要睡了。我亲爱的姐姐，我用这篇文字表达我对你的歉意，当然不会真的给你看，可是也许，也许如果，我的生命提早结束了，而你恰好能看到它，看到这些字，我希望你能原谅我，是我的错，害你没有一个小时候可爱、长大后优秀的弟弟。<br>　　对不起。<br>　　另外，我在别处讲过了，我的心不是锲子拼作的，“失去”的姐姐是一块掉下的肉，一个永远的洞，一份补不回的后悔。<br>　　我的生命里，已然没有也再不会有这个姐姐了。</p>
 <p style="text-align: center;"><b>… End …</b></p>
@@ -309,6 +406,8 @@ e.parentNode.insertBefore(j, e);
       <category term="胡诌" scheme="http://jasonzou.me/categories/%E8%83%A1%E8%AF%8C/"/>
     
     
+      <category term="亲人" scheme="http://jasonzou.me/tags/%E4%BA%B2%E4%BA%BA/"/>
+    
   </entry>
   
   <entry>
@@ -316,11 +415,12 @@ e.parentNode.insertBefore(j, e);
     <link href="http://jasonzou.me/2017/04/24/%E9%A3%8E%E8%A1%8C%E6%B0%B4%E4%B8%8A%EF%BC%8C%E8%87%AA%E7%84%B6%E6%88%90%E7%BA%B9/"/>
     <id>http://jasonzou.me/2017/04/24/风行水上，自然成纹/</id>
     <published>2017-04-24T13:46:39.000Z</published>
-    <updated>2017-04-24T15:29:45.000Z</updated>
+    <updated>2017-05-03T16:39:11.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>风行水上，自然成纹。 <br> <strong>朱光潜</strong> </p>
 </blockquote>
 <p>　　美是什么？<br>　　美是擦身而过后仍然如挂在眼角上的水珠般水灵的姑娘；美是入耳后让人驻足顾盼心生向往的笛鸣；美是求婚时含在嘴里的玫瑰和玫瑰一样兴奋脸红的准新娘；美是苦苦等待后终于从地平线下渗出的朝阳；美也是晚霞映衬下一支微<a id="more"></a>微颤烁的发簪；美可以是“烟笼寒水月笼沙”；美也可以是“大漠孤烟直，长河落日圆。”；有人说美是斑驳如老人皱纹般的古树之经络；也有人说美是如古树般沧桑的老人的皱纹。<br>　　美是难以用例子穷尽的。不论是文字，乐曲，图画这种人为之物还是某一个人，某一棵树，某一座山，某一颗星球这种自然之物，都可能蕴藏着所谓的美。<br>　　“美”这个字本身是人类语言匮乏的证明，但难以表达传播本身也是美的一大特征。<br>　　如此抽象之物就不多去给它下些苍白乏味的定义了。<br>　　朱光潜先生说：美的本质不是孤立的。<br>　　试图去定义它，必须要考虑所处时期的各种背景。此等繁杂且专业之事并非我想说的。<br>　　如何创造美更让我好奇。<br>　　美不是自然，如果说自然的就是美的，那么“创造美”也就无从谈起了。自然不是美，但自然却可被称为美的土壤。人的意愿是种子，人的抽象是培植。<br>　　创造美应是一种邂逅。<br>　　心境和所处之处能交织共鸣时，美就播下了种子。而之后是匠人的雕刻，诗人的吟诵，钢琴家的哆啦咪发，书法家的纵情挥毫，让美绽放并刻录进每一份作品之中。<br>　　并不是说只有作家才有能力创造美，有时美也可以是印在瞳孔上的影子，可以是环绕耳畔的鸟鸣。只是说，作家更擅长记录和传播美。<br>　　我想学会如何创造和传播美。<br>　　这便是我的读后感。<br>　　“创造美”突然间就成了我非常想做的事。<br>　　这源于我对自己和身边人的愧疚。<br>　　我实在不是什么美的东西，但我能看见我身边的人包括我自己对于各种“美”的期待。而和我的相处难免会误了不少本属于她们的与美相遇的机会，那我理应用上自己的浑身解数去记录下并分享一些美的东西给她们和我自己。<br>　　这算是一种严肃而要紧的救赎。<br>　　再回到“如何创造美”上。<br>　　朱光潜先生在书中给出了他的见解。<br>　　我总结大致为：美是不可强求的。灵感所至之时，用恰当的匠人技法，将其发挥和记录即可。<br>　　技法是重要的，不论是书法，写作，创作乐曲，作画还是别的所有创造，都需要一定的技法支持。这一点只能多做学习，勤加磨练了。<br>　　而我认为最值得我记住的是：美不可强求。<br>　　“乘兴而来，兴尽而返”<br>　　如前文所说的，美是邂逅。随灵感而来，你若不握紧并雕琢之，她很快就会随时间的流沙而返。<br>　　因此，好美之人理应把握和珍惜灵感。<br>　　与此同时，光是匠人之工巧，是不足以创造美的，没有灵感的卖弄，只会让人尴尬作呕，避退不及。<br>　　因此，好美之人理应适时放手。决不可为作文而作文。<br>　　所谓：风行水上，自然成纹。<br>　　我希望我至少在这片小小的夹缝中，我所有的文字都能是行云和流水，都是风划过我心中时，自然留下的波纹。</p>
+<p style="text-align: center;"><b>… End …</b></p>
 ]]></content>
     
     <summary type="html">
@@ -1008,13 +1108,13 @@ $ npm install --save-dev babel-loader
     
       <category term="webpack" scheme="http://jasonzou.me/tags/webpack/"/>
     
+      <category term="前端工程化" scheme="http://jasonzou.me/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/"/>
+    
       <category term="babel" scheme="http://jasonzou.me/tags/babel/"/>
     
       <category term="git" scheme="http://jasonzou.me/tags/git/"/>
     
       <category term="WebStorm" scheme="http://jasonzou.me/tags/WebStorm/"/>
-    
-      <category term="前端工程化" scheme="http://jasonzou.me/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/"/>
     
   </entry>
   
