@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jasonzou.me/"/>
-  <updated>2017-05-03T09:45:25.000Z</updated>
+  <updated>2017-05-12T03:32:06.000Z</updated>
   <id>http://jasonzou.me/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://jasonzou.me/2099/12/31/%E7%9B%AE%E6%A0%87/"/>
     <id>http://jasonzou.me/2099/12/31/目标/</id>
     <published>2099-12-31T03:53:49.000Z</published>
-    <updated>2017-05-03T09:45:25.000Z</updated>
+    <updated>2017-05-12T03:32:06.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote class="blockquote-center"><p>欲取其中，必求其上；欲取其上，必求上上。 <br> <strong>《孙子兵法》</strong> </p>
 </blockquote>
@@ -70,6 +70,7 @@
 </li>
 <li>前端工程化<ul>
 <li><del>学习CSS预编译工具。</del></li>
+<li><del>学习pug。</del></li>
 <li>了解gulp、grunt。</li>
 <li>学习前端测试工具。</li>
 <li>学习ESLint使用。</li>
@@ -81,30 +82,43 @@
 <li><del>阅读完《JavaScript模式》。</del></li>
 </ul>
 </li>
-<li>阅读完《你不知道的JavaScript·上卷》。</li>
+<li><del>阅读完《你不知道的JavaScript·上卷》。</del></li>
 <li><del>学习马原挂科脚本。</del></li>
 <li><del>学习“new”的执行过程。</del></li>
 <li><del>学习map, reduce, filter。</del></li>
+<li>学习TypeScript。</li>
+<li>阅读co源码。</li>
+<li>学习jQuery源码。</li>
 </ul>
 </li>
 <li>NodeJS<ul>
-<li>学习koa。</li>
+<li><del>学习koa。</del></li>
+<li>阅读 npm scripts 使用指南。</li>
 </ul>
 </li>
 <li>算法<ul>
 <li>阅读《算法导论》。</li>
 </ul>
 </li>
+<li>CSS<ul>
+<li><del>阅读学习《CSS权威指南》。</del></li>
+<li>阅读学习《精通CSS》With DEMOs。</li>
+<li>阅读学习《CSS揭秘》With DEMOs。</li>
+</ul>
+</li>
 <li><del>下厨做饭。</del></li>
 <li>闲书<ul>
 <li><del>阅读《一个叫欧维的男人决定去死》。</del></li>
 <li><del>阅读朱光潜先生的《谈美》。</del></li>
-<li>阅读《乌合之众》。</li>
+<li><del>阅读《乌合之众》。</del></li>
+<li>阅读沈三白的《浮生六记》。</li>
 </ul>
 </li>
 <li>影视<ul>
+<li>看《美丽人生》。</li>
 <li>看《攻壳机动队》。</li>
 <li>看《一个叫欧维的男人决定去死》电影。</li>
+<li>看《比海更深》。</li>
 <li>补完昭和元禄落语心中第一季。</li>
 </ul>
 </li>
@@ -114,7 +128,7 @@
 </li>
 <li>blog<ul>
 <li>将blog目录部署到gh-pages分支。</li>
-<li>写less预编译工具使用总结。</li>
+<li><del>写less预编译工具使用总结。</del></li>
 <li><del>写完 <em>JavaScript如何面向对象</em>。</del></li>
 <li><del>写减肥论文。</del></li>
 <li><del>写《记自己第一次下厨》。</del></li>
@@ -125,11 +139,12 @@
 <li><del>总结 Safari localhost 跨域问题。</del></li>
 <li><del>总结魅族 localhost 上文件无法加载问题。</del></li>
 <li>写《一个叫欧维的男人决定去死》读后感：虽然这是假人们的舞蹈。</li>
-<li>写一篇告访客。</li>
+<li><del>写一篇告访客。</del></li>
 <li><del>写“关于如何抽时间做自己不想做的事”总结。</del></li>
 <li><del>翻译《How I Became a Better Programmer》<a href="http://jlongster.com/How-I-Became-Better-Programmer" target="_blank" rel="external">How I Became a Better Programmer</a>。</del></li>
 <li><del>转载《MVC , MVP ,MVVM的区别和联系》。</del></li>
 <li><del>总结 map, reduce, filter的用法和应用场景。</del></li>
+<li>写一篇函数式编程思想学习总结。</li>
 </ul>
 </li>
 <li>LOL（这是我今年最重要的事）<ul>
@@ -272,8 +287,33 @@
 <li><del>晨跑。</del></li>
 <li>读完《乌合之众》。</li>
 <li><del>学习css预编译工具。</del></li>
-<li>写less预编译工具使用总结。</li>
-<li>写一篇告访客。</li>
+<li><del>写less预编译工具使用总结。</del></li>
+<li><del>写一篇告访客。</del></li>
+<li><del>学习一章《C语言》。</del></li>
+<li><del>学习pug。</del><h4 id="拾伍（17-05-06-17-05-08）"><a href="#拾伍（17-05-06-17-05-08）" class="headerlink" title="拾伍（17.05.06-17.05.08）"></a>拾伍（17.05.06-17.05.08）</h4></li>
+<li><del>lol打上白银二。</del></li>
+<li><del>制定CSS学习计划。</del></li>
+<li><del>读完《乌合之众》。</del></li>
+<li>处理杂事<ul>
+<li><del>买牙刷。</del></li>
+</ul>
+</li>
+<li><del>看一章《计组》。</del></li>
+<li>和天哥交流。<h4 id="拾陆（17-05-09-17-05-11）"><a href="#拾陆（17-05-09-17-05-11）" class="headerlink" title="拾陆（17.05.09-17.05.11）"></a>拾陆（17.05.09-17.05.11）</h4></li>
+<li>做一套毛概作业。</li>
+<li><del>阅读《浮生六记》。</del></li>
+<li><del>阅读《和任何人都聊得来》。</del></li>
+<li><del>找三本预备读的书。</del></li>
+<li><del>阅读《CSS权威指南》。</del></li>
+<li>学习《计组》第三章一至三小节。</li>
+<li><del>和天哥交流。</del></li>
+<li>学习函数式编程思想。</li>
+<li>写一篇函数式编程思想学习总结。<h4 id="拾柒（17-05-12-17-05-14）"><a href="#拾柒（17-05-12-17-05-14）" class="headerlink" title="拾柒（17.05.12-17.05.14）"></a>拾柒（17.05.12-17.05.14）</h4></li>
+<li>学习《计组》第三章一至三小节。</li>
+<li>做一套毛概作业。</li>
+<li>学习函数式编程思想。</li>
+<li>写一篇函数式编程思想学习总结。</li>
+<li>lol打上黄金。</li>
 </ul>
 <!-- 来必力City版安装代码 -->
 <p><div id="lv-container" data-id="city" data-uid="MTAyMC8yODMxOC80ODkw"><br>  <script type="text/javascript"><br>   (function(d, s) {<br>       var j, e = d.getElementsByTagName(s)[0];</p>
@@ -325,6 +365,50 @@ e.parentNode.insertBefore(j, e);
     
       <category term="最无用的东西" scheme="http://jasonzou.me/categories/%E6%9C%80%E6%97%A0%E7%94%A8%E7%9A%84%E4%B8%9C%E8%A5%BF/"/>
     
+    
+  </entry>
+  
+  <entry>
+    <title>入门函数式编程</title>
+    <link href="http://jasonzou.me/2017/05/12/%E5%85%A5%E9%97%A8%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/"/>
+    <id>http://jasonzou.me/2017/05/12/入门函数式编程/</id>
+    <published>2017-05-12T02:50:03.000Z</published>
+    <updated>2017-05-12T06:40:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="首先想说"><a href="#首先想说" class="headerlink" title="首先想说"></a>首先想说</h3><p>　　三个月前，公司有前辈向我建议，应该学习一下函数式编程。三个月来，在有空的时候会看看函数式编程相关的博客、教程和书籍，但一直没有花时间整理自己所学。四天前，仔细思考了一下自己对函数式编程思想的理解，发现其在我脑中完全处在一个混沌的状态，因此打算借这两周任务较少，完成一次对函数式编程的入门，并写下本文作为记录。<br>　　本文主要记录了：什么是函数式编程、为什么要进行函数式编程和如何学习和使用函数式编程三个问题。考虑到我立志做一个前端工程师，应用和举例时，我会尽可能的使用 JavaScript 语言。<a id="more"></a></p>
+<h3 id="什么是函数式编程"><a href="#什么是函数式编程" class="headerlink" title="什么是函数式编程"></a>什么是函数式编程</h3><h4 id="简单地说，什么是函数式编程"><a href="#简单地说，什么是函数式编程" class="headerlink" title="简单地说，什么是函数式编程"></a>简单地说，什么是函数式编程</h4><p>　　函数式编程是一种编程范式。常见的编程范式有：命令式编程、逻辑式编程和函数式编程。而常见的面向对象编程也是一种命令式编程。<br>　　命令式编程是面向计算机硬件的抽象，有变量（对应着存储单元），赋值语句（获取，存储指令），表达式（内存引用和算术运算）和控制语句（跳转指令）。用一句话总结：命令式程序就是一个冯诺依曼机的指令序列。<br>　　而函数式程序是面对数学的抽象，将计算描述为一种表达式求值。用一句话总结：函数式程序就是一个表达式。<br>　　值得一提的是：函数式编程的“函数”并非编程语言中的函数，而是数学领域的函数——是自变量的映射。<br>　　函数式编程有几大特征：函数是一等公民、函数无副作用、变量不变和闭包。</p>
+<h4 id="什么是一等公民的函数"><a href="#什么是一等公民的函数" class="headerlink" title="什么是一等公民的函数"></a>什么是一等公民的函数</h4><p>　　程序世界中，有且不仅有这么几种权力：创建、赋值和传递。<br>　　非一等公民的函数是不具备这些权利的，只能依附拥有这些权力的 object 才可以完成这些操作。而一等公民的函数就不需要依托 object 完成这一系列操作。<br>　　以 JavaScript 为例，JavaScript 中，函数是一等公民。因此我们可以直接对函数进行赋值，传值等操作（ JavaScript 中，函数本身也是对象）。我们甚至可以把函数作为参数传递给别的函数。比如大家从初学前端就会用的：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> clickHandler = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="built_in">console</span>.log(<span class="string">'我是一等公民。'</span>)；</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> someBtn = <span class="built_in">document</span>.querySelector(<span class="string">'.someBtn'</span>);</div><div class="line"></div><div class="line"><span class="comment">// 我们在此可以将 clickHandler 函数直接作为参数传递给 addEventListener 函数。</span></div><div class="line">someBtn.addEventListener(<span class="string">'click'</span>, clickHandler);</div></pre></td></tr></table></figure></p>
+<h4 id="什么是无副作用的函数"><a href="#什么是无副作用的函数" class="headerlink" title="什么是无副作用的函数"></a>什么是无副作用的函数</h4><p>　　无副作用的函数又可以叫做纯函数（ pure function ）。它是指同时满足以下两个条件的函数：</p>
+<ul>
+<li>函数的结果只依赖于输入的参数且与外部系统状态无关——只要输入相同，返回值总是不变的。</li>
+<li>除了返回值外，不修改程序的外部状态（比如全局变量、入参）。——满足这个条件也被称作“没有副作用 (side effect)”。</li>
+</ul>
+<p>　　函数式编程中常提到“引用透明”，“引用透明”就是指：如果一个表达式，对于相同的输入，总是有相同的结果并且不修改程序其他部分的状态，那么这个表达式是引用透明的。<br>　　因为函数式编程建议甚至强制使用纯函数，所以函数式程序是不需要维护状态的。这是其优势之一。
+　　</p>
+<h4 id="什么是无污染的变量"><a href="#什么是无污染的变量" class="headerlink" title="什么是无污染的变量"></a>什么是无污染的变量</h4><p>　　无污染的变量和纯函数是结对出现的。变量无法被改变，所有声明的变量都是作为数学定义中的变量，而非一块存储区域。因此，变量包括“对象”的状态是无法被修改的。</p>
+<h4 id="什么是闭包"><a href="#什么是闭包" class="headerlink" title="什么是闭包"></a>什么是闭包</h4><p>　　闭包就不在这里详细讲说了，相信有 JavaScript 基础的同学是很清楚闭包原理的。</p>
+<h3 id="为什么要使用函数式编程"><a href="#为什么要使用函数式编程" class="headerlink" title="为什么要使用函数式编程"></a>为什么要使用函数式编程</h3><h4 id="现状"><a href="#现状" class="headerlink" title="现状"></a>现状</h4><p>　　CPU 的发展已经不满足摩尔定律了，因此现代 CPU 的性能提升主要是依赖增加其核心数，多线程编程是大势所趋。而传统面向对象编程对于多线程的支持非常无力，状态维护成本高。而函数式编程中不存在状态，因为多个线程之间不需要共享状态，不会造成资源争用，也就不需要用锁来保护可变状态。也就不会出现死锁。这样有利于在对称多处理器架构下尽可能多的使用到各个处理器（核），提高程序的并行处理能力。<br>　　除此之外，函数式编程是使用的数学思想，更贴近人类语言，可读性和可维护性都是极高的。<br>　　当然，函数式编程对程序员更友善也是有代价的，和机器语言的差别导致函数式编程很不擅长处理 IO ，也不擅长维护状态（这是当然的）。</p>
+<h3 id="如何学习和使用函数式编程"><a href="#如何学习和使用函数式编程" class="headerlink" title="如何学习和使用函数式编程"></a>如何学习和使用函数式编程</h3><h4 id="我也不是一个熟练的使用者"><a href="#我也不是一个熟练的使用者" class="headerlink" title="我也不是一个熟练的使用者"></a>我也不是一个熟练的使用者</h4><p>　　前几天我花了不少时间搞清楚到底什么是函数式编程，这种编程范式到底是要做什么事。但是对于怎么使用函数式编程，我甚至不敢以“入门”自居，只敢说是刚从门外汉转变为一个初学者，在这里给大家分享一些学习资料为主。</p>
+<h4 id="阮一峰老师的函数式编程入门："><a href="#阮一峰老师的函数式编程入门：" class="headerlink" title="阮一峰老师的函数式编程入门："></a>阮一峰老师的函数式编程入门：</h4><p>　　<a href="http://www.ruanyifeng.com/blog/2017/02/fp-tutorial.html" target="_blank" rel="external">函数式编程入门教程</a>：本文中阮老师主要给大家介绍了函数式编程的数学理论源头。如果是真心想深入学习函数式编程的同学，兴许可以从这篇文章中找到门路。</p>
+<h4 id="阮一峰老师的图解-Monad-："><a href="#阮一峰老师的图解-Monad-：" class="headerlink" title="阮一峰老师的图解 Monad ："></a>阮一峰老师的图解 Monad ：</h4><p>　　<a href="http://www.ruanyifeng.com/blog/2015/07/monad.html" target="_blank" rel="external">图解 Monad</a>：Monad 是学习函数式编程所绕不开的一环，它也曾让阮老师感到困惑，这里是阮老师的一篇非常好的介绍 Monad 的文章。</p>
+<h4 id="JavaScript-的函数式编程："><a href="#JavaScript-的函数式编程：" class="headerlink" title="JavaScript 的函数式编程："></a>JavaScript 的函数式编程：</h4><p>　　<a href="https://blog.oyanglul.us/javascript/functional-javascript.html" target="_blank" rel="external">Functional JavaScript Mini Book</a>：关注这个作者，你能学到更多。</p>
+<h4 id="JS函数式编程指南："><a href="#JS函数式编程指南：" class="headerlink" title="JS函数式编程指南："></a>JS函数式编程指南：</h4><p>　　<a href="https://www.gitbook.com/book/llh911001/mostly-adequate-guide-chinese/details" target="_blank" rel="external">JS函数式编程指南</a>：一本中文的，JavaScript 函数式编程指南，主要讲的是怎么具体用函数式编程。</p>
+<h4 id="当然，你可能还需要补充-JavaScript-的基础知识："><a href="#当然，你可能还需要补充-JavaScript-的基础知识：" class="headerlink" title="当然，你可能还需要补充 JavaScript 的基础知识："></a>当然，你可能还需要补充 JavaScript 的基础知识：</h4><p>　　<a href="https://developer.mozilla.org/cn/docs/Web/JavaScript/Closures" target="_blank" rel="external">比如，你还没有弄清楚什么是闭包</a>：闭包对于函数式编程是意义重大的，没有闭包，我就不知道怎么进行函数的科里化了。</p>
+<h4 id="函数式编程的模式匹配："><a href="#函数式编程的模式匹配：" class="headerlink" title="函数式编程的模式匹配："></a>函数式编程的模式匹配：</h4><p>　　<a href="http://www.cnblogs.com/SinSay/archive/2010/09/20/1831455.html" target="_blank" rel="external">pattern matching</a>：又一个函数式编程必须掌握的技巧。</p>
+<h3 id="最后想说"><a href="#最后想说" class="headerlink" title="最后想说"></a>最后想说</h3><p>　　本文引用了大量的知乎内容，由于引用知乎流程太麻烦了，我就不写引用了。这是不对的。我知道。<br>　　我认为函数式编程在将来很可能成为一种程序员非常值得掌握乃至必须掌握的编程范式。很有学习的意义，我非常希望本文不是你了解函数式编程的终点而是起点。</p>
+<h4 id="最后的最后"><a href="#最后的最后" class="headerlink" title="最后的最后"></a>最后的最后</h4><p>　　如果希望自己不再对诸如函数式编程这样的“突然兴起”的技术感到懵逼或是迷茫。你需要一本 SICP 。我认为每一个真正的程序员都应该通读并理解 SICP 。</p>
+<p style="text-align: center;"><b>… End …</b></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;首先想说&quot;&gt;&lt;a href=&quot;#首先想说&quot; class=&quot;headerlink&quot; title=&quot;首先想说&quot;&gt;&lt;/a&gt;首先想说&lt;/h3&gt;&lt;p&gt;　　三个月前，公司有前辈向我建议，应该学习一下函数式编程。三个月来，在有空的时候会看看函数式编程相关的博客、教程和书籍，但一直没有花时间整理自己所学。四天前，仔细思考了一下自己对函数式编程思想的理解，发现其在我脑中完全处在一个混沌的状态，因此打算借这两周任务较少，完成一次对函数式编程的入门，并写下本文作为记录。&lt;br&gt;　　本文主要记录了：什么是函数式编程、为什么要进行函数式编程和如何学习和使用函数式编程三个问题。考虑到我立志做一个前端工程师，应用和举例时，我会尽可能的使用 JavaScript 语言。
+    
+    </summary>
+    
+      <category term="编程语言知识杂烩" scheme="http://jasonzou.me/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E7%9F%A5%E8%AF%86%E6%9D%82%E7%83%A9/"/>
+    
+    
+      <category term="函数式编程" scheme="http://jasonzou.me/tags/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
@@ -389,7 +473,7 @@ e.parentNode.insertBefore(j, e);
     <link href="http://jasonzou.me/2017/04/27/%E6%88%91%E5%B8%AE%E4%BD%A0%E5%8E%BB%E7%9C%8B%E7%9C%8B%E4%BD%A0%E7%9A%84%E7%88%B7%E7%88%B7%E5%90%A7/"/>
     <id>http://jasonzou.me/2017/04/27/我帮你去看看你的爷爷吧/</id>
     <published>2017-04-26T17:10:15.000Z</published>
-    <updated>2017-05-04T02:53:48.000Z</updated>
+    <updated>2017-05-04T06:03:14.000Z</updated>
     
     <content type="html"><![CDATA[<p>　　我有两个姐姐，这个姐姐是姑妈的女儿。<br>　　姐姐的爷爷去世了。<br><a id="more"></a><br>　　睡前看到朋友圈里面，姐姐写了长文祭奠突然去世的爷爷。姐姐还在澳大利亚，不能及时赶回见爷爷最后一面。<br>　　姐姐很难过。爷爷生前非常疼爱她，每周都要通电话，大事小事都想过问。这样的关系，我是很羡慕的，而由羡慕生发的难过也着实刺痛我心。我不忍心看到美好的事物陨灭，一个慈祥的爷爷离世，一段亲密的爷孙关系到头，一位美丽的少女我的姐姐随之哭作泪人。<br>　　我想为姐姐做些什么来稀释她的痛苦，姐姐尚在异乡，因此我想：若是她最近回不到家的话，我想趁回成都的机会替她去给爷爷上一炷香，捎几句话。<br>　　然而通讯录找到她后，我又实在不知道该怎么开口，问些什么好，说些什么合适。<br>　　姐姐啊，怕是在您的心中，我都已经不是您的弟弟了吧？又或是，在您的心中，“弟弟”已经算不上是什么值得忆及的亲人了吧。真的很抱歉，没能让你成为一个对“弟弟”二字充满温暖回忆的人。<br>　　哪怕我很少被你想起了，但你还是会不时出现在我的梦里。我曾说过，小学是我目前为止唯一一段快乐的时光，而你也是那段快乐时光中不可或缺的一部分。<br>　　姐姐，对于小时候的我是十分特殊的。她代表着我的向往，姐姐成绩很好，写得一手好书法，有很多的玩具，家里有电脑，朋友很多，文静，漂亮，和姐姐聊天会非常开心。在姐姐家玩过的大富翁是我童年的珍宝之一，我很少赢姐姐，但我并不会因此不开心，只会觉得不甘心，想和姐姐再玩一局，而每一局都会是充满乐趣的。能玩姐姐的玩具，踩在姐姐卧室的木地板上，吹姐姐房间的空调，吃姐姐买的零食，看姐姐租的阿凡提。这些都是儿时的我极度向往的事情。我总是习惯性地想去找姐姐玩。就连稍微长大之后，只要有姐姐在的地方我也总喜欢跟着姐姐。<br>　　我也从不会觉得姐姐会不喜欢我去她那里玩，我总觉得，姐姐是乐意当我的姐姐的。<br>　　我相信很长一段时间里也确实是这样的。<br>　　后来姐姐去了成都读书，不常回来，我也不常见她了。总以为血缘的纽带是坚不可摧的，姐姐永远都会是我的姐姐。<br>　　真正再长大些，姐姐自然比我更大些。那时我们见面多是在过年走亲戚的时候，姐姐开始会吵着要提前回家了，我和弟弟（当然也是姐姐的弟弟）只能两个人一块儿想办法怎么玩。<br>　　那之后，当然是现在回首才发现，那之后，我心中的姐姐，和那个端着平板戴着耳机看剧的少女，已经不是一个人了。<br>　　小时候从未想过，也绝对想不到，姐姐有时是会嫌弃我这个弟弟。<br>　　的确，姐姐穿着一身搭配得体的漂亮衣服时，我还穿着妈妈织给我的毛衣加上胡乱搭上的运动裤和臃肿的外套。我有了我的第一台学习机时，姐姐说：这种东西没什么用，我倒是会偶尔借同学的来查查单词。我还不敢向姑娘表白，或是只知道把所有情感一股脑写进情书里给喜欢的女孩看的时候，姐姐已经谈过两三次恋爱了。我还一天到晚想着打游戏的时候，姐姐已经看了不少书，上网也不和我做同样的事了。<br>　　真是一个不知道让人怎么去喜欢的弟弟啊。<br>　　再之后，我已经不再那么寒酸窘迫的时候，和姐姐的关系倒是好过一小段时间。只是那时候都太忙，也没有刻意去联系。我总想着，姐姐总还是我的姐姐啊。而后来，尤其是到了今天，才顿觉：何来的什么“总还是我的姐姐”啊？！<br>　　说是明白了血缘的纽带是会被打破的，倒不如该感谢血缘的纽带竟然如此强韧，时隔那么久才终于让姐姐把我从她生命的内圈赶到了外圈。<br>　　要说以前的姐姐总是走在我前面，那么现在，我们已经算是走上了人生的两条路了。她在海外求学，以后会嫁到称得上她的家庭，而我在国内，大学毕业后会当一个普通的职员，开始准备养自己的家庭。<br>　　我不知道该说些什么。<br>　　我当然不能去责骂年幼时的我，虽然那时候的我没有当好一个弟弟，没能成为一个让姐姐和同学聊天时也能自豪的说出口的弟弟。可是我没办法责怪那时候的自己，一是因为我那时并没有做出任何选择，再重复一万次，我也还是那个样的我自己，所以没有后悔，二是那时的我真的非常敬重喜爱自己的这位姐姐，我没有理由去责怪一个情感真挚的尚不知世故冷暖的小孩。<br>　　我没有什么做错了的选择，也的确没有谁可以怪罪。可是我还是会忍不住地长吁短叹，忍不住在梦到姐姐再次和我聊天之后泪下沾衿。要说我童年有什么最最喜欢的人或事，姐姐她必定是我最最喜欢的人里面的前三甲。作为对比，有朝一日姐姐看到我时，心中给出的陈述怕只会是：小时候总来找我玩的弟弟。仅此而已。我实在是没办法不感到愧疚。<br>　　我也是很期望成为别人的美好回忆的，更不必说她是我曾经的至亲至爱之一。<br>　　倘若真的我们的人生本就不会在同一条道路上走太久，那起码在想起我的时候，是能让嘴角上扬的吧！<br>　　总之，可是，我身在异乡的姐姐啊，我既不在你生命的内圈中，也不是你回忆中的某束暖阳。我到底应该如何开口，以一个什么样的身份开口，才能让你同意，让我替你去给你逝去的爷爷上一炷香呢？我要说些什么，才能让你难受的心情缓和一些呢？我要怎么做，才能让你在我主动找你聊天时，你不三言两语应付我让我有话却不敢开口呢？<br>　　现在是夜里三点，身在澳大利亚的你再过不久就要醒来了，而我也必须要睡了。我亲爱的姐姐，我用这篇文字表达我对你的歉意，当然不会真的给你看，可是也许，也许如果，我的生命提早结束了，而你恰好能看到它，看到这些字，我希望你能原谅我，是我的错，害你没有一个小时候可爱、长大后优秀的弟弟。<br>　　对不起。<br>　　另外，我在别处讲过了，我的心不是锲子拼作的，“失去”的姐姐是一块掉下的肉，一个永远的洞，一份补不回的后悔。<br>　　我的生命里，已然没有也再不会有这个姐姐了。</p>
 <p style="text-align: center;"><b>… End …</b></p>
@@ -726,9 +810,9 @@ e.parentNode.insertBefore(j, e);
     
       <category term="JavaScript" scheme="http://jasonzou.me/tags/JavaScript/"/>
     
-      <category term="ES6" scheme="http://jasonzou.me/tags/ES6/"/>
-    
       <category term="函数式编程" scheme="http://jasonzou.me/tags/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="ES6" scheme="http://jasonzou.me/tags/ES6/"/>
     
   </entry>
   
@@ -1028,9 +1112,9 @@ e.parentNode.insertBefore(j, e);
       <category term="JavaScript知识总结" scheme="http://jasonzou.me/categories/JavaScript%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="面向对象" scheme="http://jasonzou.me/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
-    
       <category term="JavaScript" scheme="http://jasonzou.me/tags/JavaScript/"/>
+    
+      <category term="面向对象" scheme="http://jasonzou.me/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/"/>
     
   </entry>
   
